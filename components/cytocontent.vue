@@ -2,103 +2,118 @@
     <div>
         <section class="overflow-hidden py-24">
             <div class="container mx-auto px-4">
-                <div class=" space-y-5 border bg-purple-200 border-purple-100 shadow shadow-md shadow-purple-300 p-10 rounded-lg lg:px-20">
-                    <h1 class="text-3xl lg:text-5xl font-bold max-w-xl lg:max-w-3xl">CYTO Wallet <br> Privacy and Policy</h1>
-                    <p class="text-lg font-medium">Last Updated: Apr 18, 2024</p>
+                <div class="space-y-5 border bg-purple-200 border-purple-100 shadow shadow-md shadow-purple-300 p-10 rounded-lg lg:px-20">
+                    <h1 class="text-3xl lg:text-5xl font-bold max-w-xl lg:max-w-3xl">Pteri Wallet <br> Privacy Policy</h1>
+                    <p class="text-lg font-medium">Effective Date: January 22, 2025</p>
                 </div>
                 <div class="py-12 lg:px-10 space-y-3">
+                    <!-- Section 1 -->
                     <div class="w-full py-6">
-                        <p class="text-lg font-normal text-justify text-gray-700  dark:text-gray-100">Welcome to Cyto Self Custody. This Privacy Policy explains the minimal amount of information we collect and how we use it when you use our services, websites, and applications (collectively, the "Service"). Your use of the Service indicates your acceptance of the terms of this Privacy Policy.</p>
+                        <p class="text-lg font-normal text-justify text-gray-700">
+                            Pteri Wallet, created and managed by Kakr Labs, is a self-custodial solution designed to ensure your keys mean your coins. This Privacy Policy explains how Pteri Wallet handles user privacy and data, emphasizing user sovereignty and transparency.
+                        </p>
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
-                    <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">1. Information We Collect</h2>
-                            <h3 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">1.1 Information You Provide</h3>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                None: We do not collect any personal information from our users. All interactions with the Service are based solely on the blockchain technology, which does not require personal data.
-                            </p>
-                            <h3 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">1.2 Information We Don’t Collect</h3>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                Personal Information: We do not collect any personal information like names, email addresses, or contact details. 
 
-                                Private Keys and Wallet Information: We do not collect or store your private keys, wallet information, or any other data related to your digital assets. Control over and responsibility for your private keys remain solely with you. 
+                    <!-- Section 2: Self-Custody Wallet -->
+                    <div class="w-full flex items-center justify-between">
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">1. Self-Custody Wallet</h2>
+                            <p class="text-gray-700 font-normal text-justify text-lg mb-6">
+                                Pteri Wallet is a self-custodial wallet, meaning users are entirely responsible for their private keys, seed phrases, and funds. Pteri Wallet does not store, access, or manage any wallet data, private keys, or seed phrases. Users must securely back up their seed phrases, as Kakr Labs cannot assist in recovery if they are lost.
                             </p>
                         </div>
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
+
+                    <!-- Section 3: Data Collection and Storage -->
                     <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">2. Use of Information </h2>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                Since we do not collect any personal information, there are no conventional uses of such data for service provision, marketing, or communication with users.
-                            </p>
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">2. Data Collection and Storage</h2>
+                            <ul class="list-disc pl-5 text-gray-700 font-normal text-lg space-y-3">
+                                <li>Pteri Wallet does not store seed phrases, private keys, or wallet credentials.</li>
+                                <li>Pteri Wallet does not track blockchain transactions or collect identifiable personal data.</li>
+                                <li>All blockchain interactions are conducted directly on decentralized networks, ensuring pseudonymous and public transactions.</li>
+                            </ul>
                         </div>
-                       
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
+
+                    <!-- Section 4: Limited Data Usage -->
                     <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">3. Sharing of Information</h2>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                No personal information is collected, hence there is no sharing of such data with third parties.
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">3. Limited Data Usage</h2>
+                            <p class="text-gray-700 font-normal text-justify text-lg mb-6">
+                                To improve app experience, Pteri Wallet may collect limited, non-identifiable data such as app performance metrics and aggregated usage statistics. This information is used solely to enhance functionality and ensure a smooth user experience. Users can opt out of analytics collection within the app settings.
                             </p>
                         </div>
-                       
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
+
+                    <!-- Section 5: User Responsibility -->
                     <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">4. Security of Your Information</h2>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                Our commitment to security involves ensuring that your use of our Service is protected against unauthorized access and fraud. We employ various security measures but remind users that they hold full responsibility for maintaining the security of their private keys. 
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">4. User Responsibility</h2>
+                            <p class="text-gray-700 font-normal text-justify text-lg mb-6">
+                                As a self-custody wallet, users are responsible for safeguarding private keys and seed phrases, securing devices, and ensuring safe backup practices. Kakr Labs cannot retrieve lost keys, seed phrases, or funds under any circumstances.
                             </p>
                         </div>
-                       
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
+
+                    <!-- Section 6: Blockchain Transparency -->
                     <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">5. Your Choices </h2>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                Without personal information storage, there are no typical user choices related to account management or data deletion. Your control over your data is inherent in your possession and management of your private keys. 
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">5. Blockchain Transparency</h2>
+                            <p class="text-gray-700 font-normal text-justify text-lg mb-6">
+                                All blockchain transactions are public and immutable. While Pteri Wallet does not store or track this data, activity on the blockchain can be viewed by anyone using a blockchain explorer. For enhanced confidentiality, users are encouraged to use privacy features like Mimblewimble Extension Blocks (MWEB).
                             </p>
                         </div>
-                       
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
+
+                    <!-- Section 7: Policy Updates -->
                     <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">6. Changes to This Privacy Policy </h2>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                We may update this Privacy Policy to reflect changes to our information practices. Any significant changes will be notified through our Service, where applicable. 
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">6. Policy Updates</h2>
+                            <p class="text-gray-700 font-normal text-justify text-lg mb-6">
+                                Kakr Labs may update this Privacy Policy to reflect changes in legal requirements or product updates. Significant changes will be notified via in-app notifications or on our official website.
                             </p>
                         </div>
-                       
                     </div>
                     <div class="w-full h-px bg-gray-200 mb-12"></div>
+
+                    <!-- Section 8: Contact Us -->
                     <div class="w-full flex items-center justify-between">
-                        <div class="">
-                            <h2 class="text-xl lg:text-2xl font-bold mb-6  dark:text-gray-100">7. Contact Us</h2>
-                            <p class="text-gray-700  dark:text-gray-100 font-normal text-justify text-lg mb-6">
-                                We may update this Privacy Given the anonymous nature of our Service, we do not maintain traditional means of contact. For any assistance, please refer to our public resources and community support forums.  
+                        <div>
+                            <h2 class="text-xl lg:text-2xl font-bold mb-6">7. Contact Us</h2>
+                            <p class="text-gray-700 font-normal text-justify text-lg mb-6">
+                                For questions or concerns, reach out via our official support portal: <a href="https://support.kakrlabs.com" class="text-purple-500 underline">support.kakrlabs.com</a>.
                             </p>
                         </div>
-                       
                     </div>
                 </div>
             </div>
-            <cytocta/>
+            <cytocta />
         </section>
     </div>
 </template>
 
 <script>
-import cytocta from './cytocta.vue'
+import cytocta from './cytocta.vue';
 export default {
-  components: { cytocta },
-
-}
+    components: { cytocta },
+};
 </script>
 
-<style></style>
+<style>
+
+ul.list-disc {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+ul.list-disc li {
+    margin-bottom: 0.5rem;
+}
+</style>

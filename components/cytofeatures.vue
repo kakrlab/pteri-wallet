@@ -1,108 +1,105 @@
 <template>
-    <div>
-        <section class="relative overflow-hidden px-10">
-            <div class="container p-6 mx-auto rounded rounded-xl border border-gray-100 shadow shadow-2xl text-white bg-black">
-                <div class="max-w-3xl mx-auto text-center mb-14">
-                    <!-- <span
-                        class="inline-block py-1 px-3 mb-4 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">FEATURES</span> -->
-                    <h1 class="font-heading text-3xl xs:text-3xl md:text-6xl font-bold mb-7">
-                        <span>With </span>
-                        <span class="font-serif italic">features </span>
-                        <span>to suit your style </span>
-                    </h1>
-                    <p class="text- text-purple-300">We’re blockchain-based and focused on the security of your digital asset.</p>
-                </div>
-                <div class="max-w-7xl mx-auto">
-                    <div class="flex flex-wrap -mx-4 items-center">
-                        <div class="w-full lg:w-2/5 xl:w-auto px-4 lg:pb-10 mb-16 lg:mb-0">
-                            <div class="mx-auto max-w-sm">
-                                <div class="flex items-center pb-12 mb-12 border-b border-purple-300">
-                                    <div
-                                        class="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-purple-100 rounded-full">
-                                        <!-- <img src="saturn-assets/images/features/icon-element.svg" alt=""> -->
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-semibold">Simple Design</h3>
-                                        <span class="text-sm text-gray-400">Intuitive Navigation.</span>
-                                    </div>
-                                </div>
-                                <div class="flex items-center pb-12 mb-12 border-b border-purple-300">
-                                    <div
-                                        class="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-orange-100 rounded-full">
-                                        <!-- <img src="saturn-assets/images/features/icon-hierarchy.svg" alt=""> -->
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-semibold">Encrypted &amp; Protected</h3>
-                                        <span class="text-sm text-gray-400">Encrypted to Secure Your Assets</span>
-                                    </div>
-                                </div>
-                                <div class="flex items-center">
-                                    <div
-                                        class="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-gray-300 rounded-full">
-                                        <!-- <img src="saturn-assets/images/features/icon-school-bag.svg" alt=""> -->
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-semibold">Manage with ease</h3>
-                                        <span class="text-sm text-gray-400">A Vault for  digital assets</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full flex items-center justify-center lg:w-1/5 xl:w-auto mx-auto px-4 xl:-mr-10 mb-16 lg:mb-0">
-                            <img class="block h-80 md:h-100 lg:h-auto xl:h-150 mx-auto"
-                                src="~/assets/phone-picture.png" alt="">
-                                <!-- <img class="block h-80 md:h-100 lg:h-auto xl:h-150 mx-auto"
-                                src="~/assets/phone.png" alt=""> -->
-                        </div>
-                        <div class="w-full lg:w-2/5 xl:w-auto px-4 lg:pb-10">
-                            <div class="mx-auto max-w-sm">
-                                <div class="flex items-center pb-12 mb-12 border-b border-purple-300">
-                                    <div
-                                        class="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-red-200 rounded-full">
-                                        <!-- <img src="saturn-assets/images/features/icon-robot.svg" alt=""> -->
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-semibold">Litecoin Support</h3>
-                                        <span class="text-sm text-gray-400">Manage all your Litecoin Assets</span>
-                                    </div>
-                                </div>
-                                <div class="flex items-center pb-12 mb-12 border-b border-purple-300">
-                                    <div
-                                        class="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-purple-300 rounded-full">
-                                        <!-- <img src="saturn-assets/images/features/icon-cam.svg" alt=""> -->
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-semibold">Zero personal tracking</h3>
-                                        <span class="text-sm text-gray-400">We do not track your personal information</span>
+  <div>
 
-                                        
-                                    </div>
-                                </div>
-                                <div class="flex items-center">
-                                    <div
-                                        class="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-green-200 rounded-full">
-                                        <!-- <img src="saturn-assets/images/features/icon-flask.svg" alt=""> -->
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-semibold">24/7 Support</h3>
-                                        <span class="text-sm text-gray-400">Always Here to Help</span>
+    <!-- Main Section -->
+    <section class="relative overflow-hidden px-4 py-10 lg:px-10 md:px-10 bg-gradient-to-r from-purple-800 via-indigo-900 to-black">
+      <div class="container p-6 mx-auto rounded-xl border border-gray-100 shadow-2xl text-gray-900 bg-white">
+        <!-- Heading -->
+        <div class="max-w-3xl mx-auto text-center mb-14">
+          <h1 class="font-heading text-3xl md:text-6xl font-bold mb-7">
+            With features to suit your style
+          </h1>
+          <p class="text-purple-800">
+            We're blockchain-based and focused on the security of your digital asset.
+          </p>
+        </div>
 
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Content Wrapper -->
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
+          <!-- Left Column -->
+          <div class="flex-1 space-y-8">
+            <div class="flex items-start">
+              <div class="w-12 h-12 flex-shrink-0 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                <!-- Icon Placeholder -->
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Send, Receive, and Hold Litecoin</h3>
+                <p class="text-sm text-gray-600">Manage transactions easily.</p>
+              </div>
             </div>
-        </section>
-    </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 flex-shrink-0 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                <!-- Icon Placeholder -->
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Generate Any Litecoin Address</h3>
+                <p class="text-sm text-gray-600">Create L, M, and MWEB addresses.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-12 h-12 flex-shrink-0 bg-red-200 rounded-full flex items-center justify-center mr-4">
+                <!-- Icon Placeholder -->
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Import and Enhance Existing Addresses</h3>
+                <p class="text-sm text-gray-600">Import and upgrade functionality.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Image -->
+          <div class="flex-shrink-0 mx-auto">
+            <img
+              class="block h-48 md:h-64 lg:h-auto mx-auto object-contain w-full max-w-xs md:max-w-sm"
+              src="/img/ios/ios-1.png"
+              alt="Phone Picture"
+            />
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex-1 space-y-8">
+            <div class="flex items-start">
+              <div class="w-12 h-12 flex-shrink-0 bg-purple-300 rounded-full flex items-center justify-center mr-4">
+                <!-- Icon Placeholder -->
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Privacy Payments with MWEB</h3>
+                <p class="text-sm text-gray-600">Make confidential transactions.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-12 h-12 flex-shrink-0 bg-green-200 rounded-full flex items-center justify-center mr-4">
+                <!-- Icon Placeholder -->
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Mobile App with BIP39 Standard</h3>
+                <p class="text-sm text-gray-600">Secure your keys on mobile.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-12 h-12 flex-shrink-0 bg-orange-200 rounded-full flex items-center justify-center mr-4">
+                <!-- Icon Placeholder -->
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Low Transaction Fees</h3>
+                <p class="text-sm text-gray-600">Fees under 5 cents USD.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
 </script>
 
-<style></style>
+<style>
+/* Add custom styles here if needed */
+</style>

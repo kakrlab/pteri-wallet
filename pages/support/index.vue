@@ -1,5 +1,14 @@
 <template>
   <div>
+    <Head>
+      <Title>PTERI Wallet Support - Contact Us for Assistance</Title>
+      <Meta name="description" content="Get help with PTERI Wallet issues. Contact our support team for assistance with your self-custody Litecoin wallet." />
+      <Meta name="og:title" content="PTERI Wallet Support - Contact Us for Assistance" />
+      <Meta name="og:description" content="Get help with PTERI Wallet issues. Contact our support team for assistance with your self-custody Litecoin wallet." />
+      <Meta name="twitter:title" content="PTERI Wallet Support - Contact Us for Assistance" />
+      <Meta name="twitter:description" content="Get help with PTERI Wallet issues. Contact our support team for assistance with your self-custody Litecoin wallet." />
+    </Head>
+    
     <section class="bg-white py-4">
   <div class="container px-4 mx-auto">
     <div class="w-full md:w-1/4 p-3">
@@ -31,7 +40,6 @@
                 <select class="appearance-none w-full py-2.5 px-4 text-coolGray-900 text-base font-normal bg-white border outline-none border-coolGray-200 focus:border-purple-500 rounded-lg shadow-input">
                   <option>Mobile App</option>
                   <option>Web</option>
-                  <option>Chrome Extension</option>
                   <option>N/A</option>
                 </select>
               </div>

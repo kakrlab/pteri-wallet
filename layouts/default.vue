@@ -1,8 +1,9 @@
 <template>
-  <div class="bg-white dark:bg-black">
-    <cytonav class="sticky top-0 bg-white dark:bg-black dark:text-purple-300 z-20"/>
+  <div class="bg-white">
+    <cytonav class="sticky top-0 bg-white z-20"/>
     <slot />
     <cytofooter/>
+    <WebWalletModal />
   </div>
 </template>
 
@@ -13,9 +14,6 @@
 import Cytofooter from '../components/cytofooter.vue';
 import Cytonav from '../components/cytonav.vue';
 
-
-// Destructure the color mode functionality
-const { preference } = useColorMode();
 
 // Pass components to the page
 const components = {

@@ -1,0 +1,4 @@
+[{  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {    "namespace": "android_app",
+    "package_name": "org.kakr.pteri",    "sha256_cert_fingerprints": ["F4:86:43:50:E0:7F:E5:81:61:14:67:F7:A0:42:34:4C:B8:A4:3A:A7:CF:9D:B7:21:9E:47:59:4D:82:DC:01:B0", "C1:06:E8:D0:44:A4:EB:48:11:D4:D2:23:DC:F8:A9:85:BB:EA:AF:40:CA:1E:04:63:A4:AF:37:FD:ED:B0:53:B3","D5:73:34:AD:C9:75:0F:9D:57:D2:D4:A0:44:4A:EF:3B:CF:CC:04:88:2A:EF:D3:E9:56:39:2A:55:27:81:DC:6D"]
+  }}]
