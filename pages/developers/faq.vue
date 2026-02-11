@@ -2,10 +2,18 @@
   <Head>
     <Title>PTERI Developer FAQ — Common Questions & Answers</Title>
     <Meta name="description" content="Find answers to frequently asked questions about integrating PTERI Wallet authentication, Litecoin APIs, and developer tools." />
-    <Meta name="og:title" content="PTERI Developer FAQ — Common Questions & Answers" />
-    <Meta name="og:description" content="Find answers to frequently asked questions about integrating PTERI Wallet authentication, Litecoin APIs, and developer tools." />
+    <Meta property="og:title" content="PTERI Developer FAQ — Common Questions & Answers" />
+    <Meta property="og:description" content="Find answers to frequently asked questions about integrating PTERI Wallet authentication, Litecoin APIs, and developer tools." />
+    <Meta property="og:type" content="website" />
+    <Meta property="og:url" content="https://pteri.kakr.org/developers/faq" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:width" content="1200" />
+    <Meta property="og:image:height" content="630" />
+    <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI Developer FAQ — Common Questions & Answers" />
     <Meta name="twitter:description" content="Find answers to frequently asked questions about integrating PTERI Wallet authentication, Litecoin APIs, and developer tools." />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 
   <div class="container mx-auto px-4 py-16">
@@ -59,14 +67,13 @@
         <!-- FAQ Item 8 -->
         <div>
           <h2 class="text-xl font-bold mb-3">What support options are available for developers?</h2>
-          <p class="text-gray-700">We offer several support channels:
+          <p class="text-gray-700">We offer several support channels:</p>
           <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
             <li>Community support through our <a href="https://discord.gg/pteri" target="_blank" class="text-blue-600 hover:underline">Discord server</a></li>
             <li>Email support for paid plan subscribers</li>
             <li>Priority support for enterprise customers</li>
             <li>Comprehensive documentation and API references</li>
           </ul>
-          </p>
         </div>
       </div>
     </div>

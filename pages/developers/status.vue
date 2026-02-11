@@ -2,10 +2,18 @@
   <Head>
     <Title>PTERI System Status & Developer FAQ</Title>
     <Meta name="description" content="Check real-time uptime for PTERI APIs and find answers to common developer questions for authentication, identity, and Litecoin RPCs." />
-    <Meta name="og:title" content="PTERI System Status & Developer FAQ" />
-    <Meta name="og:description" content="Check real-time uptime for PTERI APIs and find answers to common developer questions for authentication, identity, and Litecoin RPCs." />
+    <Meta property="og:title" content="PTERI System Status & Developer FAQ" />
+    <Meta property="og:description" content="Check real-time uptime for PTERI APIs and find answers to common developer questions for authentication, identity, and Litecoin RPCs." />
+    <Meta property="og:type" content="website" />
+    <Meta property="og:url" content="https://pteri.kakr.org/developers/status" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:width" content="1200" />
+    <Meta property="og:image:height" content="630" />
+    <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI System Status & Developer FAQ" />
     <Meta name="twitter:description" content="Check real-time uptime for PTERI APIs and find answers to common developer questions for authentication, identity, and Litecoin RPCs." />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 
   <div class="container mx-auto px-4 py-16">

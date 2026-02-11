@@ -4,10 +4,14 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'en', // Set the language of the page to English
+        lang: 'en',
       },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: 'https://www.pteri.org/pterifavicon.png' },
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: 'utf-8' }
       ]
     }
   },

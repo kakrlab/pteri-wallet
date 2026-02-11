@@ -2,10 +2,18 @@
   <Head>
     <Title>PTERI Wallet Web — Access Your Litecoin Wallet Securely Online</Title>
     <Meta name="description" content="Use PTERI Wallet from your browser with secure, self-custody access. No passwords. No custodial risk. Full identity and authentication support." />
-    <Meta name="og:title" content="PTERI Wallet Web — Access Your Litecoin Wallet Securely Online" />
-    <Meta name="og:description" content="Use PTERI Wallet from your browser with secure, self-custody access. No passwords. No custodial risk. Full identity and authentication support." />
+    <Meta property="og:title" content="PTERI Wallet Web — Access Your Litecoin Wallet Securely Online" />
+    <Meta property="og:description" content="Use PTERI Wallet from your browser with secure, self-custody access. No passwords. No custodial risk. Full identity and authentication support." />
+    <Meta property="og:type" content="website" />
+    <Meta property="og:url" content="https://pteri.kakr.org/web" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:width" content="1200" />
+    <Meta property="og:image:height" content="630" />
+    <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI Wallet Web — Access Your Litecoin Wallet Securely Online" />
     <Meta name="twitter:description" content="Use PTERI Wallet from your browser with secure, self-custody access. No passwords. No custodial risk. Full identity and authentication support." />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 
   <div class="container mx-auto px-4 py-16">

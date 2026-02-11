@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "RU4Z7ZTJZX.org.kakr.pteri",
+        "paths": ["/sign", "/sign/*", "/identity", "/identity/*", "/*"]
+      }
+    ]
+  }
+}

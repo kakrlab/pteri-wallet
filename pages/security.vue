@@ -2,10 +2,18 @@
   <Head>
     <Title>PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy</Title>
     <Meta name="description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
-    <Meta name="og:title" content="PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy" />
-    <Meta name="og:description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
+    <Meta property="og:title" content="PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy" />
+    <Meta property="og:description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
+    <Meta property="og:type" content="website" />
+    <Meta property="og:url" content="https://pteri.kakr.org/security" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:width" content="1200" />
+    <Meta property="og:image:height" content="630" />
+    <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy" />
     <Meta name="twitter:description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 
   <div class="container mx-auto px-4 py-16">

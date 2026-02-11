@@ -2,10 +2,18 @@
   <Head>
     <Title>Download PTERI Wallet — Secure Litecoin Wallet for iOS & Android</Title>
     <Meta name="description" content="Download PTERI Wallet for iOS or Android. Self-custody, MWEB privacy, biometric security, and authentication approval built-in." />
-    <Meta name="og:title" content="Download PTERI Wallet — Secure Litecoin Wallet for iOS & Android" />
-    <Meta name="og:description" content="Download PTERI Wallet for iOS or Android. Self-custody, MWEB privacy, biometric security, and authentication approval built-in." />
+    <Meta property="og:title" content="Download PTERI Wallet — Secure Litecoin Wallet for iOS & Android" />
+    <Meta property="og:description" content="Download PTERI Wallet for iOS or Android. Self-custody, MWEB privacy, biometric security, and authentication approval built-in." />
+    <Meta property="og:type" content="website" />
+    <Meta property="og:url" content="https://pteri.kakr.org/download" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:width" content="1200" />
+    <Meta property="og:image:height" content="630" />
+    <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="Download PTERI Wallet — Secure Litecoin Wallet for iOS & Android" />
     <Meta name="twitter:description" content="Download PTERI Wallet for iOS or Android. Self-custody, MWEB privacy, biometric security, and authentication approval built-in." />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 
   <div class="container mx-auto px-4 py-16">
