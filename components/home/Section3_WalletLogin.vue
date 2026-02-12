@@ -39,9 +39,9 @@
           </p>
 
           <div class="flex flex-wrap gap-4">
-            <button @click="modalOpen = true" class="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow hover:bg-indigo-400 transition">
-              Web Wallet – Early Access
-            </button>
+            <a href="https://wallet.pteri.org" target="_blank" class="inline-block px-6 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow hover:bg-indigo-400 transition">
+              Launch Web Wallet
+            </a>
             <a href="https://docs.kakrlabs.com" target="_blank" class="inline-flex items-center text-white font-bold hover:text-indigo-300 transition group px-4 py-3">
               Learn About PTERI Authentication
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,5 +76,5 @@
 </template>
 
 <script setup>
-const modalOpen = useState('webWalletModalOpen')
+// Web wallet is now live at wallet.pteri.org
 </script>

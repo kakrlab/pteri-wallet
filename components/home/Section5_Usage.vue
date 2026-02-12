@@ -30,9 +30,9 @@
           <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
             Access your wallet securely from the browser when you need it.
           </p>
-          <button @click="modalOpen = true" class="inline-block px-8 py-3 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition">
-            Web Wallet – Early Access
-          </button>
+          <a href="https://wallet.pteri.org" target="_blank" class="inline-block px-8 py-3 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition">
+            Launch Web Wallet
+          </a>
         </div>
       </div>
     </div>
@@ -40,5 +40,5 @@
 </template>
 
 <script setup>
-const modalOpen = useState('webWalletModalOpen')
+// Web wallet is now live at wallet.pteri.org
 </script>

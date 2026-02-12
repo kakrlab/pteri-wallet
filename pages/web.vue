@@ -50,14 +50,14 @@
     </div>
     
     <div class="text-center">
-      <button @click="modalOpen = true" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-700 transition-colors">
-        Web Wallet – Early Access
-      </button>
+      <a href="https://wallet.pteri.org" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-700 transition-colors">
+        Launch Web Wallet
+      </a>
       <p class="mt-4 text-gray-600">Requires a modern browser with WebAssembly support</p>
     </div>
   </div>
 </template>
 
 <script setup>
-const modalOpen = useState('webWalletModalOpen')
+// Web wallet is now live at wallet.pteri.org
 </script>

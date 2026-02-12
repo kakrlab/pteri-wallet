@@ -12,14 +12,14 @@
         <a href="https://apps.apple.com/us/app/pteri-wallet/id6751649780" target="_blank" class="px-8 py-4 bg-white text-indigo-900 font-bold rounded-lg shadow-lg hover:bg-gray-100 transform hover:-translate-y-1 transition text-lg">
           Download App
         </a>
-        <button @click="modalOpen = true" class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-indigo-900 transform hover:-translate-y-1 transition text-lg">
-          Web Wallet – Early Access
-        </button>
+        <a href="https://wallet.pteri.org" target="_blank" class="inline-block px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-indigo-900 transform hover:-translate-y-1 transition text-lg">
+          Launch Web Wallet
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-const modalOpen = useState('webWalletModalOpen')
+// Web wallet is now live at wallet.pteri.org
 </script>

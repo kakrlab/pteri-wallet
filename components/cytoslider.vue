@@ -28,12 +28,13 @@
           </a>
           
           <!-- Web Version Button -->
-          <button
-            @click="modalOpen = true"
-            class="px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition"
+          <a
+            href="https://wallet.pteri.org"
+            target="_blank"
+            class="inline-block px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition"
           >
-            Web Wallet – Early Access
-          </button>
+            Launch Web Wallet
+          </a>
 
           <!-- iOS Button -->
           <a
@@ -93,7 +94,6 @@ const images = ref([
 
 const currentIndex = ref(0);
 let slideInterval = null;
-const modalOpen = useState('webWalletModalOpen')
 
 // Move carousel
 const showSlide = (i) => {

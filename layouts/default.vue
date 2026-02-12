@@ -3,7 +3,6 @@
     <cytonav class="sticky top-0 bg-white z-20"/>
     <slot />
     <cytofooter/>
-    <WebWalletModal />
   </div>
 </template>
 
