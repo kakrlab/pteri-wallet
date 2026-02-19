@@ -6,14 +6,17 @@
       <Meta property="og:title" content="PTERI Wallet FAQ - Frequently Asked Questions About Self-Custody" />
       <Meta property="og:description" content="Find answers to common questions about PTERI Wallet, self-custody, Litecoin, and blockchain security." />
       <Meta property="og:type" content="website" />
-      <Meta property="og:url" content="https://pteri.kakr.org/support/faq" />
-      <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+      <Meta property="og:url" content="https://www.pteri.org/support/faq" />
+      <Meta property="og:image" content="https://www.pteri.org/og-image.png" />
+      <Meta property="og:image:secure_url" content="https://www.pteri.org/og-image.png" />
+      <Meta property="og:image:type" content="image/png" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
+      <Meta property="og:image:alt" content="PTERI Wallet FAQ - Frequently Asked Questions About Self-Custody" />
       <Meta name="twitter:card" content="summary_large_image" />
       <Meta name="twitter:title" content="PTERI Wallet FAQ - Frequently Asked Questions About Self-Custody" />
       <Meta name="twitter:description" content="Find answers to common questions about PTERI Wallet, self-custody, Litecoin, and blockchain security." />
-      <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+      <Meta name="twitter:image" content="https://www.pteri.org/og-image.png" />
       <Meta name="twitter:site" content="@pteriwallet" />
     </Head>
     

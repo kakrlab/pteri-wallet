@@ -41,20 +41,20 @@ useHead({
     // Open Graph
     { property: 'og:title', content: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet + Web Wallet' },
     { property: 'og:description', content: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication. Web + iOS + Android.' },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://pteri.kakr.org' }, // Assuming this is the canonical URL based on request
-    { property: 'og:image', content: 'https://pteri.kakr.org/og-image.png' },
+    { property: 'og:url', content: 'https://www.pteri.org' },
+    { property: 'og:image', content: 'https://www.pteri.org/og-image.png' },
+    { property: 'og:image:secure_url', content: 'https://www.pteri.org/og-image.png' },
+    { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
+    { property: 'og:image:alt', content: 'PTERI Wallet - Secure Self-Custody Litecoin Wallet' },
     // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet' },
     { name: 'twitter:description', content: 'Secure self-custody Litecoin wallet for identity, trust, and payments.' },
-    { name: 'twitter:image', content: 'https://pteri.kakr.org/og-image.png' },
-    { name: 'twitter:site', content: '@pteriwallet' },
+    { name: 'twitter:image', content: 'https://www.pteri.org/og-image.png' },
   ],
   link: [
-    { rel: 'canonical', href: 'https://pteri.kakr.org' }
+    { rel: 'canonical', href: 'https://www.pteri.org' }
   ]
 })
 </script>

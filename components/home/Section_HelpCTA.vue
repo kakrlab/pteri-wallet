@@ -8,7 +8,7 @@
         Our guides and support team are ready to assist you.
       </p>
       <a 
-        href="https://docs.kakrlabs.com" 
+        href="https://support.kakr.ai/portal/en/home" 
         target="_blank"
         class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition"
       >
