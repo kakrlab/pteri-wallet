@@ -5,9 +5,9 @@
     <Meta property="og:title" content="PTERI Wallet Features — Biometric, MWEB, Identity & Authentication" />
     <Meta property="og:description" content="Explore key features of PTERI Wallet: biometric security, MWEB privacy, device-side encryption, identity signing, and authentication approvals." />
     <Meta property="og:type" content="website" />
-    <Meta property="og:url" content="https://www.pteri.org/features" />
-    <Meta property="og:image" content="https://www.pteri.org/og-image.png" />
-    <Meta property="og:image:secure_url" content="https://www.pteri.org/og-image.png" />
+    <Meta property="og:url" content="https://pteri.kakr.org/features" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:secure_url" content="https://pteri.kakr.org/og-image.png" />
     <Meta property="og:image:type" content="image/png" />
     <Meta property="og:image:width" content="1200" />
     <Meta property="og:image:height" content="630" />
@@ -15,7 +15,7 @@
     <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI Wallet Features — Biometric, MWEB, Identity & Authentication" />
     <Meta name="twitter:description" content="Explore key features of PTERI Wallet: biometric security, MWEB privacy, device-side encryption, identity signing, and authentication approvals." />
-    <Meta name="twitter:image" content="https://www.pteri.org/og-image.png" />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
     <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 

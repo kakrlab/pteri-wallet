@@ -5,9 +5,9 @@
     <Meta property="og:title" content="PTERI SDKs — JavaScript, Python, Dart & Swift Integration" />
     <Meta property="og:description" content="Install PTERI SDKs and start integrating authentication, identity, Litecoin RPC, and IoT security in minutes." />
     <Meta property="og:type" content="website" />
-    <Meta property="og:url" content="https://www.pteri.org/developers/sdk" />
-    <Meta property="og:image" content="https://www.pteri.org/og-image.png" />
-    <Meta property="og:image:secure_url" content="https://www.pteri.org/og-image.png" />
+    <Meta property="og:url" content="https://pteri.kakr.org/developers/sdk" />
+    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta property="og:image:secure_url" content="https://pteri.kakr.org/og-image.png" />
     <Meta property="og:image:type" content="image/png" />
     <Meta property="og:image:width" content="1200" />
     <Meta property="og:image:height" content="630" />
@@ -15,7 +15,7 @@
     <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI SDKs — JavaScript, Python, Dart & Swift Integration" />
     <Meta name="twitter:description" content="Install PTERI SDKs and start integrating authentication, identity, Litecoin RPC, and IoT security in minutes." />
-    <Meta name="twitter:image" content="https://www.pteri.org/og-image.png" />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
     <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 

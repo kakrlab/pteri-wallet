@@ -52,9 +52,9 @@ useHead({
     { property: 'og:title', content: 'Terms of Use | PTERI Wallet' },
     { property: 'og:description', content: 'Terms of Use for PTERI Wallet. Understanding your responsibilities for self-custody and usage.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://www.pteri.org/terms' },
-    { property: 'og:image', content: 'https://www.pteri.org/og-image.png' },
-    { property: 'og:image:secure_url', content: 'https://www.pteri.org/og-image.png' },
+    { property: 'og:url', content: 'https://pteri.kakr.org/terms' },
+    { property: 'og:image', content: 'https://pteri.kakr.org/og-image.png' },
+    { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/og-image.png' },
     { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
@@ -62,7 +62,7 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Terms of Use | PTERI Wallet' },
     { name: 'twitter:description', content: 'Terms of Use for PTERI Wallet. Understanding your responsibilities for self-custody and usage.' },
-    { name: 'twitter:image', content: 'https://www.pteri.org/og-image.png' },
+    { name: 'twitter:image', content: 'https://pteri.kakr.org/og-image.png' },
     { name: 'twitter:site', content: '@pteriwallet' }
   ]
 })
