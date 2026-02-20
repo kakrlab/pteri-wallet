@@ -58,6 +58,10 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-10-16',
   nitro: {
-    preset: 'vercel',
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
   },
 })
