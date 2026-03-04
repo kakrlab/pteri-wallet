@@ -18,15 +18,24 @@
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-wrap gap-4 mt-4">
+        <div class="flex flex-wrap gap-4 mt-4 items-center">
           <a
             href="https://play.google.com/store/apps/details?id=org.kakr.pteri"
             target="_blank"
-            class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition"
+            class="transition-transform hover:scale-105"
           >
-            Download Pteri Wallet
+            <img src="https://kakr.ai/playstore.png" alt="Get it on Google Play" class="h-12">
           </a>
           
+          <!-- iOS Button -->
+          <a
+            href="https://apps.apple.com/us/app/pteri-wallet/id6751649780"
+            target="_blank"
+            class="transition-transform hover:scale-105"
+          >
+            <img src="https://kakr.ai/ios.png" alt="Download on App Store" class="h-12">
+          </a>
+
           <!-- Web Version Button -->
           <a
             href="https://wallet.pteri.org"
@@ -34,15 +43,6 @@
             class="inline-block px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition"
           >
             Launch Web Wallet
-          </a>
-
-          <!-- iOS Button -->
-          <a
-            href="https://apps.apple.com/us/app/pteri-wallet/id6751649780"
-            target="_blank"
-            class="px-6 py-3 border-2 border-gray-300 text-gray-600 font-semibold rounded-lg hover:border-indigo-600 hover:text-indigo-600 transition"
-          >
-            Download for iOS
           </a>
         </div>
 

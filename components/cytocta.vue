@@ -10,19 +10,23 @@
       </p>
 
       <!-- Buttons -->
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <div class="flex flex-col sm:flex-row justify-center gap-4 items-center">
         <!-- Primary Download Button -->
         <a
           href="https://play.google.com/store/apps/details?id=org.kakr.pteri"
           target="_blank"
-          class="inline-flex items-center justify-center bg-white text-purple-700 hover:bg-gray-100 font-semibold rounded-lg px-6 py-3 shadow-lg transition"
+          class="transition-transform hover:scale-105"
         >
-
-          <span>Get on Google Play</span>
+          <img src="https://kakr.ai/playstore.png" alt="Get it on Google Play" class="h-14">
         </a>
 
-        <!-- Secondary Learn More Button -->
-      
+        <a
+          href="https://apps.apple.com/us/app/pteri-wallet/id6751649780"
+          target="_blank"
+          class="transition-transform hover:scale-105"
+        >
+          <img src="https://kakr.ai/ios.png" alt="Download on App Store" class="h-14">
+        </a>
       </div>
     </div>
   </section>
