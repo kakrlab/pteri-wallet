@@ -53,16 +53,16 @@ useHead({
     { property: 'og:description', content: 'PTERI Wallet Privacy Policy. No data collection, zero trackers, and complete self-custody of your identity and funds.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://pteri.kakr.org/privacy' },
-    { property: 'og:image', content: 'https://pteri.kakr.org/og-image.png' },
-    { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/og-image.png' },
-    { property: 'og:image:type', content: 'image/png' },
+    { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
+    { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
+    { property: 'og:image:type', content: 'image/jpeg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     { property: 'og:image:alt', content: 'Privacy Policy | PTERI Wallet' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Privacy Policy | PTERI Wallet' },
     { name: 'twitter:description', content: 'PTERI Wallet Privacy Policy. No data collection, zero trackers, and complete self-custody of your identity and funds.' },
-    { name: 'twitter:image', content: 'https://pteri.kakr.org/og-image.png' },
+    { name: 'twitter:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
     { name: 'twitter:site', content: '@pteriwallet' }
   ]
 })

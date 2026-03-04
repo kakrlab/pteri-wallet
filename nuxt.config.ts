@@ -16,9 +16,9 @@ export default defineNuxtConfig({
         // Default OG tags (can be overridden per page)
         { property: 'og:site_name', content: 'PTERI Wallet' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://pteri.kakr.org/og-image.png' },
-        { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/og-image.png' },
-        { property: 'og:image:type', content: 'image/png' },
+        { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
+        { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
+        { property: 'og:image:type', content: 'image/jpeg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'PTERI Wallet - Secure Self-Custody Litecoin Wallet' },

@@ -6,16 +6,16 @@
     <Meta property="og:description" content="Use PTERI Wallet from your browser with secure, self-custody access. No passwords. No custodial risk. Full identity and authentication support." />
     <Meta property="og:type" content="website" />
     <Meta property="og:url" content="https://pteri.kakr.org/web" />
-    <Meta property="og:image" content="https://pteri.kakr.org/og-image.png" />
-    <Meta property="og:image:secure_url" content="https://pteri.kakr.org/og-image.png" />
-    <Meta property="og:image:type" content="image/png" />
+    <Meta property="og:image" content="https://pteri.kakr.org/pteri-wallet-og.jpg" />
+    <Meta property="og:image:secure_url" content="https://pteri.kakr.org/pteri-wallet-og.jpg" />
+    <Meta property="og:image:type" content="image/jpeg" />
     <Meta property="og:image:width" content="1200" />
     <Meta property="og:image:height" content="630" />
     <Meta property="og:image:alt" content="PTERI Wallet Web - Access Your Litecoin Wallet Securely Online" />
     <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:title" content="PTERI Wallet Web — Access Your Litecoin Wallet Securely Online" />
     <Meta name="twitter:description" content="Use PTERI Wallet from your browser with secure, self-custody access. No passwords. No custodial risk. Full identity and authentication support." />
-    <Meta name="twitter:image" content="https://pteri.kakr.org/og-image.png" />
+    <Meta name="twitter:image" content="https://pteri.kakr.org/pteri-wallet-og.jpg" />
     <Meta name="twitter:site" content="@pteriwallet" />
   </Head>
 
