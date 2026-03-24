@@ -82,14 +82,11 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 // Carousel images
 const images = ref([
-  { src: '/img/ios/ios-1.png', alt: 'Mockup 1' },
-  { src: '/img/ios/ios-2.png', alt: 'Receive Screen' },
-  { src: '/img/ios/ios-3.png', alt: 'Send Screen' },
-  { src: '/img/ios/ios-4.png', alt: 'Mockup 4' },
-  { src: '/img/ios/ios-5.png', alt: 'Mockup 5' },
-  { src: '/img/ios/ios-6.png', alt: 'Mockup 6' },
-  { src: '/img/ios/ios-7.png', alt: 'Mockup 7' },
-  { src: '/img/ios/ios-8.png', alt: 'Mockup 8' },
+  { src: '/new/eac2e1bf7fa.png', alt: 'PTERI Wallet Screen 1' },
+  { src: '/new/eac2e1bf7fa (1).png', alt: 'PTERI Wallet Screen 2' },
+  { src: '/new/eac2e1bf7fa (2).png', alt: 'PTERI Wallet Screen 3' },
+  { src: '/new/eac2e1bf7fa (3).png', alt: 'PTERI Wallet Screen 4' },
+  { src: '/new/eac2e1bf7fa (4).png', alt: 'PTERI Wallet Screen 5' },
 ]);
 
 const currentIndex = ref(0);
