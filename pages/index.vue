@@ -34,27 +34,26 @@ import SectionWhoItsFor from '~/components/home/Section_WhoItsFor.vue'
 import SectionFAQ from '~/components/home/Section_FAQ.vue'
 import SectionHelpCTA from '~/components/home/Section_HelpCTA.vue'
 
-useHead({
+useSeoMeta({
   title: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet + Web Wallet | Kakr Labs',
-  meta: [
-    { name: 'description', content: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication. Web + iOS + Android.' },
-    // Open Graph
-    { property: 'og:title', content: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet + Web Wallet' },
-    { property: 'og:description', content: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication. Web + iOS + Android.' },
-    { property: 'og:url', content: 'https://pteri.kakr.org' },
-    { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
-    { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
-    { property: 'og:image:type', content: 'image/jpeg' },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'PTERI Wallet - Secure Self-Custody Litecoin Wallet' },
-    // Twitter Card
-    { name: 'twitter:title', content: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet' },
-    { name: 'twitter:description', content: 'Secure self-custody Litecoin wallet for identity, trust, and payments.' },
-    { name: 'twitter:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
-  ],
-  link: [
-    { rel: 'canonical', href: 'https://pteri.kakr.org' }
-  ]
+  description: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication. Web + iOS + Android.',
+  ogTitle: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet + Web Wallet',
+  ogDescription: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication. Web + iOS + Android.',
+  ogUrl: 'https://pteri.kakr.org',
+  ogImage: 'https://pteri.kakr.org/pteri-wallet-og.jpg',
+  ogImageWidth: '1200',
+  ogImageHeight: '630',
+  ogImageType: 'image/jpeg',
+  ogImageAlt: 'PTERI Wallet - Secure Self-Custody Litecoin Wallet',
+  ogType: 'website',
+  ogSiteName: 'PTERI Wallet',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet',
+  twitterDescription: 'Secure self-custody Litecoin wallet for identity, trust, and payments.',
+  twitterImage: 'https://pteri.kakr.org/pteri-wallet-og.jpg',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://pteri.kakr.org' }]
 })
 </script>

@@ -52,23 +52,27 @@
         </div>
 
         <div class="lg:w-1/2 relative">
-           <!-- Placeholder for illustration or mockup -->
-           <div class="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-2xl p-8 border border-indigo-700 shadow-2xl">
-             <div class="space-y-4">
-                <div class="flex justify-between items-center text-sm text-indigo-300 mb-4">
-                  <span>Login Request</span>
-                  <span>Just now</span>
+          <div class="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-2xl p-8 border border-indigo-700 shadow-2xl">
+            <p class="text-indigo-300 text-sm font-semibold uppercase tracking-widest mb-6">PTERI Auth vs Traditional Login</p>
+            <div class="space-y-4">
+              <div v-for="row in comparison" :key="row.label" class="grid grid-cols-3 gap-2 items-center text-sm">
+                <span class="text-indigo-200 font-medium">{{ row.label }}</span>
+                <div class="flex items-center gap-2 bg-indigo-900 rounded-lg px-3 py-2">
+                  <span class="text-green-400 text-base">✓</span>
+                  <span class="text-white">{{ row.pteri }}</span>
                 </div>
-                <div class="bg-indigo-900 rounded-lg p-4">
-                  <p class="font-medium text-white mb-1">Confirm login to Dashboard</p>
-                  <p class="text-xs text-indigo-300">IP: 192.168.1.1 • San Francisco, US</p>
+                <div class="flex items-center gap-2 bg-indigo-950 rounded-lg px-3 py-2">
+                  <span class="text-red-400 text-base">✗</span>
+                  <span class="text-indigo-300">{{ row.traditional }}</span>
                 </div>
-                <div class="flex space-x-3 pt-2">
-                  <button class="flex-1 bg-red-500 bg-opacity-20 text-red-300 py-2 rounded-lg font-medium text-sm hover:bg-opacity-30 transition">Deny</button>
-                  <button class="flex-1 bg-green-500 text-white py-2 rounded-lg font-medium text-sm hover:bg-green-600 transition shadow-lg shadow-green-500/30">Approve</button>
-                </div>
-             </div>
-           </div>
+              </div>
+            </div>
+            <div class="mt-6 grid grid-cols-3 gap-2 text-xs text-center">
+              <span></span>
+              <span class="text-indigo-300 font-semibold">PTERI Wallet</span>
+              <span class="text-indigo-500">Password / OTP</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -76,5 +80,11 @@
 </template>
 
 <script setup>
-// Web wallet is now live at wallet.pteri.org
+const comparison = [
+  { label: 'Password needed',   pteri: 'Never',        traditional: 'Always' },
+  { label: 'Phishing risk',     pteri: 'None',         traditional: 'High' },
+  { label: 'Data stored',       pteri: 'On-device',    traditional: 'On server' },
+  { label: 'Identity proof',    pteri: 'Cryptographic', traditional: 'Shared secret' },
+  { label: 'Works offline',     pteri: 'Yes',          traditional: 'No' },
+]
 </script>

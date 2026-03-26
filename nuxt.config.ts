@@ -16,6 +16,9 @@ export default defineNuxtConfig({
         // Default OG tags (can be overridden per page)
         { property: 'og:site_name', content: 'PTERI Wallet' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet' },
+        { property: 'og:description', content: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication.' },
+        { property: 'og:url', content: 'https://pteri.kakr.org' },
         { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
         { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
         { property: 'og:image:type', content: 'image/jpeg' },
@@ -24,6 +27,7 @@ export default defineNuxtConfig({
         { property: 'og:image:alt', content: 'PTERI Wallet - Secure Self-Custody Litecoin Wallet' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@pteriwallet' },
+        { name: 'twitter:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
       ]
     }
   },
