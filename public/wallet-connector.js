@@ -19,12 +19,13 @@
  */
 
   // const SERVER_URL = "http://localhost:3024"; 
-  const SERVER_URL = "https://pteri-wallet-middlelayer.onrender.com";
+   const SERVER_URL = "https://pteriwalletapixx121.pteri.org";
   // Must be HTTP/HTTPS URL for handshake
 
   const RELAY_PATH = "/relay";
 
-  const WALLET_ORIGIN = "https://pteriweb.netlify.app"; // your wallet URL (must match the one used in the wallet's relay connection)
+
+ const WALLET_ORIGIN = "https://wallet.pteri.org"; // your wallet URL (must match the one used in the wallet's relay connection)
 
   // const WALLET_ORIGIN = "http://localhost:3000";
 
@@ -87,7 +88,7 @@ class WalletConnector {
       url.href,
       'wallet-popup',
       `left=${left},top=${top},width=${width},height=${height},` +
-        'toolbar=no,menubar=no,location=no,status=no,scrollbars=yes,resizable=yes,noopener,noreferrer'
+      'toolbar=no,menubar=no,location=no,status=no,scrollbars=yes,resizable=yes,noopener,noreferrer'
     );
   }
 
@@ -191,7 +192,7 @@ class WalletConnector {
 
       socket.on('connect_error', (err) => {
         clearInterval(resendTimer);
-        this._log('❌ Connection error:', err.message);
+        this._log('Connection error:', err.message);
         this._setStatus('Connection failed');
         reject(err);
       });
@@ -225,7 +226,7 @@ class WalletConnector {
       return result;
     } catch (e) {
       this._setStatus('Connect failed');
-      this._log('❌ connect error:', e?.message || e);
+      this._log('connect error:', e?.message || e);
       throw e;
     }
   }
@@ -254,11 +255,14 @@ class WalletConnector {
       return result;
     } catch (e) {
       this._setStatus('Sign failed');
-      this._log('❌ sign error:', e?.message || e);
+      this._log('sign error:', e?.message || e);
       throw e;
     }
   }
 }
+
+// Make it globally available
+window.WalletConnector = WalletConnector;
 
 // Export for different module systems
 if (typeof module !== 'undefined' && module.exports) {

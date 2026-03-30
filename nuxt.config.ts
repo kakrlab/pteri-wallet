@@ -10,6 +10,18 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: 'https://www.pteri.org/pterifavicon.png' },
       ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-8YD9CV3WHL',
+          async: true,
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8YD9CV3WHL');`,
+        },
+      ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
@@ -39,13 +51,6 @@ export default defineNuxtConfig({
       },
       display: 'swap',
     }],
-    ['nuxt-gtag', {
-      id: 'G-8YD9CV3WHL', // ✅ Your GA4 Measurement ID
-      config: {
-        anonymize_ip: true // Optional
-      },
-      debug: false // Optional: set true for development
-    }]
   ],
 
   tailwindcss: {
