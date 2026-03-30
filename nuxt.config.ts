@@ -12,14 +12,14 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-8YD9CV3WHL',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-BMJ6F1C4GG',
           async: true,
         },
         {
           innerHTML: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-8YD9CV3WHL');`,
+gtag('config', 'G-BMJ6F1C4GG');`,
         },
       ],
       meta: [
