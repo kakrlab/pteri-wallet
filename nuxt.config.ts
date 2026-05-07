@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ['~/assets/css/global.css'],
   app: {
     baseURL: '/',
     head: {
@@ -68,6 +69,10 @@ gtag('config', 'G-BMJ6F1C4GG');`,
   compatibilityDate: '2024-10-16',
   nitro: {
     preset: 'static',
+    output: {
+      dir: 'dist',
+      publicDir: 'dist',
+    },
     prerender: {
       crawlLinks: true,
       routes: ['/']

@@ -1,26 +1,18 @@
 <template>
-  <div class="bg-white">
-    <cytonav class="sticky top-0 bg-white z-20"/>
+  <div class="bg-[#050a1a] min-h-screen overflow-x-hidden">
+    <cytonav class="sticky top-0 z-50" />
     <slot />
-    <cytofooter/>
+    <cytofooter />
+    <DownloadModal />
   </div>
 </template>
 
 <script setup>
-
-
-// Import your components
 import Cytofooter from '../components/cytofooter.vue';
 import Cytonav from '../components/cytonav.vue';
 
-
-// Pass components to the page
 const components = {
   Cytofooter,
   Cytonav,
 };
 </script>
-
-<style>
-
-</style>

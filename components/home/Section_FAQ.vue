@@ -1,14 +1,32 @@
 <template>
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4 max-w-3xl">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+  <section class="py-20 bg-[#070d1f]">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div data-aos="fade-up" class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-400">Everything you need to know about PTERI Wallet.</p>
       </div>
 
-      <div class="space-y-6">
-        <div v-for="(faq, index) in faqs" :key="index" class="bg-white rounded-lg shadow-sm p-6">
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ faq.question }}</h3>
-          <div class="text-gray-600 prose prose-sm max-w-none" v-html="faq.answer"></div>
+      <div class="space-y-3">
+        <div v-for="(faq, index) in faqs" :key="index"
+          data-aos="fade-up"
+          :data-aos-delay="index * 60"
+          class="bg-[#0d1530] border border-white/10 rounded-xl overflow-hidden hover:border-blue-500/30 transition-colors">
+          <button
+            class="w-full flex items-center justify-between px-6 py-4 text-left"
+            @click="toggle(index)"
+          >
+            <span class="text-white font-semibold text-sm pr-4">{{ faq.question }}</span>
+            <svg
+              class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200"
+              :class="{ 'rotate-180': openIndex === index }"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div v-if="openIndex === index" class="px-6 pb-5">
+            <div class="text-gray-400 text-sm leading-relaxed" v-html="faq.answer"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -16,6 +34,12 @@
 </template>
 
 <script setup>
+const openIndex = ref(null)
+
+const toggle = (index) => {
+  openIndex.value = openIndex.value === index ? null : index
+}
+
 const faqs = [
   {
     question: "What is PTERI Wallet?",
@@ -23,15 +47,15 @@ const faqs = [
   },
   {
     question: "Is PTERI a custodial wallet?",
-    answer: "No. PTERI is a <strong>self-custody</strong> wallet. Your private keys are stored securely on your device, and only you have access to them. We never see your keys or funds."
+    answer: "No. PTERI is a <strong class='text-white'>self-custody</strong> wallet. Your private keys are stored securely on your device, and only you have access to them. We never see your keys or funds."
   },
   {
     question: "Does PTERI support multiple blockchains?",
-    answer: "Currently, PTERI is focused exclusively on <strong>Litecoin</strong> to ensure the fastest, most secure, and lowest-fee experience for payments and identity."
+    answer: "Currently, PTERI is focused exclusively on <strong class='text-white'>Litecoin</strong> to ensure the fastest, most secure, and lowest-fee experience for payments and identity."
   },
   {
     question: "Is there a web wallet available?",
-    answer: "Yes. You can access the PTERI Web Wallet at <a href='https://wallet.pteri.org' class='text-indigo-600 hover:underline' target='_blank'>wallet.pteri.org</a>."
+    answer: "Yes. You can access the PTERI Web Wallet at <a href='https://wallet.pteri.org' class='text-blue-400 hover:underline' target='_blank'>wallet.pteri.org</a>."
   },
   {
     question: "Does PTERI collect user data?",
@@ -43,11 +67,10 @@ const faqs = [
   },
   {
     question: "Who builds PTERI Wallet?",
-    answer: "PTERI Wallet is built by <strong>Kakr Labs</strong>, a privacy-focused development team building decentralized identity and payment tools."
+    answer: "PTERI Wallet is built by <strong class='text-white'>Kakr Labs</strong>, a privacy-focused development team building decentralized identity and payment tools."
   }
-];
+]
 
-// JSON-LD for SEO
 useHead({
   script: [
     {
@@ -60,7 +83,7 @@ useHead({
           'name': faq.question,
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': faq.answer.replace(/<[^>]*>?/gm, '') // Strip HTML for JSON-LD
+            'text': faq.answer.replace(/<[^>]*>?/gm, '')
           }
         }))
       })

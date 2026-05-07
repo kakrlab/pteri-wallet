@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/sitemap": "^7.2.3",
+    "aos": "^2.3.4",
     "nuxt": "^3.11.2",
     "nuxt-gtag": "^3.0.2",
     "vue": "^3.4.21",
