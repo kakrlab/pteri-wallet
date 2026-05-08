@@ -1,7 +1,7 @@
 <template>
-  <section class="py-16 bg-[#050a1a]">
+  <section class="py-16 bg-page-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div data-aos="zoom-in" class="bg-[#0d1530] border border-white/10 rounded-3xl p-10 md:p-14 relative overflow-hidden">
+      <div data-aos="zoom-in" class="bg-card-dark border border-white/10 rounded-3xl p-10 md:p-14 relative overflow-hidden">
         <!-- Background decoration -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-[#345D9D]/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-600/10 rounded-full blur-3xl"></div>

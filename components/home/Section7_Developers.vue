@@ -1,6 +1,6 @@
 <template>
   <!-- Developer Platform & MFA Infrastructure section -->
-  <section id="developers" class="py-20 bg-[#070d1f]">
+  <section id="developers" class="py-20 bg-page-mid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -43,9 +43,10 @@
         <!-- Right: Code snippet + side features -->
         <div data-aos="fade-left" class="flex flex-col gap-6">
           <!-- Code block -->
-          <div class="bg-[#0a0f20] border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+          <div class="bg-screen-dark border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+            <ClientOnly>
             <!-- Tab bar -->
-            <div class="flex items-center gap-1 px-4 py-3 bg-[#0d1530] border-b border-white/10">
+            <div class="flex items-center gap-1 px-4 py-3 bg-card-dark border-b border-white/10">
               <div class="flex gap-1.5">
                 <div class="w-3 h-3 rounded-full bg-red-500/70"></div>
                 <div class="w-3 h-3 rounded-full bg-yellow-500/70"></div>
@@ -127,6 +128,7 @@
               </template>
 
             </div>
+            </ClientOnly>
           </div>
 
           <!-- Side feature cards -->
@@ -134,7 +136,7 @@
             <div v-for="(feat, index) in sideFeatures" :key="feat.title"
               data-aos="fade-up"
               :data-aos-delay="index * 80"
-              class="bg-[#0d1530] border border-white/10 rounded-xl p-4 hover:border-blue-500/30 transition-colors">
+              class="bg-card-dark border border-white/10 rounded-xl p-4 hover:border-blue-500/30 transition-colors">
               <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" :class="feat.bgClass">
                 <svg class="w-4 h-4" :class="feat.iconClass" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="feat.icon"/>

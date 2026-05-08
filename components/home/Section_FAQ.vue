@@ -1,5 +1,5 @@
 <template>
-  <section id="faq" class="py-20 bg-[#070d1f]">
+  <section id="faq" class="py-20 bg-page-mid">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       <div data-aos="fade-up" class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -10,7 +10,7 @@
         <div v-for="(faq, index) in faqs" :key="index"
           data-aos="fade-up"
           :data-aos-delay="index * 60"
-          class="bg-[#0d1530] border border-white/10 rounded-xl overflow-hidden hover:border-blue-500/30 transition-colors">
+          class="bg-card-dark border border-white/10 rounded-xl overflow-hidden hover:border-blue-500/30 transition-colors">
           <button
             class="w-full flex items-center justify-between px-6 py-4 text-left"
             @click="toggle(index)"

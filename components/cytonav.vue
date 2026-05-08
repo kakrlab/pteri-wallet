@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="relative py-4 bg-[#050a1a] border-b border-white/10 z-50">
+    <nav class="relative py-4 bg-page-dark border-b border-white/10 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between">
 
@@ -21,7 +21,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div v-if="productMenuOpen" class="absolute top-full mt-2 w-48 bg-[#0d1530] border border-white/10 rounded-lg shadow-xl py-2 z-50">
+              <div v-if="productMenuOpen" class="absolute top-full mt-2 w-48 bg-card-dark border border-white/10 rounded-lg shadow-xl py-2 z-50">
                 <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('what-is-pteri'); productMenuOpen = false">What is PTERI</button>
                 <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('why-pteri'); productMenuOpen = false">Why PTERI</button>
                 <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('security'); productMenuOpen = false">Security</button>
@@ -48,7 +48,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="absolute left-0 top-full mt-2 w-64 bg-[#0d1530] border border-white/10 rounded-xl shadow-2xl py-3 hidden group-hover:block z-50">
+              <div class="absolute left-0 top-full mt-2 w-64 bg-card-dark border border-white/10 rounded-xl shadow-2xl py-3 hidden group-hover:block z-50">
 
                 <!-- On-page -->
                 <div class="px-3 pb-2">
@@ -137,7 +137,7 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div v-if="menuOpen" class="xl:hidden fixed inset-0 top-[65px] z-50 bg-[#050a1a] border-t border-white/10 overflow-y-auto">
+      <div v-if="menuOpen" class="xl:hidden fixed inset-0 top-[65px] z-50 bg-page-dark border-t border-white/10 overflow-y-auto">
         <nav class="flex flex-col p-6 space-y-1">
           <button class="mobile-nav-link text-left" @click="scrollTo('hero'); toggleMenu()">Home</button>
           <button class="mobile-nav-link text-left" @click="scrollTo('what-is-pteri'); toggleMenu()">What is PTERI</button>

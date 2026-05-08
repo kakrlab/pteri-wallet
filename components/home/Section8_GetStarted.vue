@@ -1,6 +1,6 @@
 <template>
   <!-- Download & Get Started section -->
-  <section id="download" class="py-20 bg-[#050a1a]">
+  <section id="download" class="py-20 bg-page-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <!-- Header -->
       <div data-aos="fade-up" class="text-center mb-14">
@@ -13,7 +13,7 @@
       <!-- Download cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         <!-- iOS -->
-        <div data-aos="fade-up" data-aos-delay="0" class="bg-[#0d1530] border border-white/10 rounded-2xl p-8 flex flex-col items-center text-center hover:border-blue-500/40 transition-all duration-300 group">
+        <div data-aos="fade-up" data-aos-delay="0" class="bg-card-dark border border-white/10 rounded-2xl p-8 flex flex-col items-center text-center hover:border-blue-500/40 transition-all duration-300 group">
           <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-blue-500/10 group-hover:border-blue-500/30 transition-all">
             <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Android -->
-        <div data-aos="fade-up" data-aos-delay="100" class="bg-[#0d1530] border border-white/10 rounded-2xl p-8 flex flex-col items-center text-center hover:border-green-500/40 transition-all duration-300 group">
+        <div data-aos="fade-up" data-aos-delay="100" class="bg-card-dark border border-white/10 rounded-2xl p-8 flex flex-col items-center text-center hover:border-green-500/40 transition-all duration-300 group">
           <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-green-500/10 group-hover:border-green-500/30 transition-all">
             <svg class="w-8 h-8 text-green-400" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.523 15.341l1.505-2.607a.5.5 0 00-.866-.5l-1.524 2.638A9.013 9.013 0 0112 14a9.013 9.013 0 01-4.638 1.872l-1.524-2.638a.5.5 0 00-.866.5l1.505 2.607A9.04 9.04 0 003 22h18a9.04 9.04 0 00-3.477-6.659zM8.5 19a1 1 0 110-2 1 1 0 010 2zm7 0a1 1 0 110-2 1 1 0 010 2zM7.392 6.5l-1.5-2.598a.5.5 0 01.866-.5l1.52 2.633A9.04 9.04 0 0112 5a9.04 9.04 0 013.722.035l1.52-2.633a.5.5 0 01.866.5L16.608 5.5A9.04 9.04 0 0121 13H3a9.04 9.04 0 014.392-6.5z"/>

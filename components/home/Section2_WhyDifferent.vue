@@ -1,6 +1,6 @@
 <template>
   <!-- "Passwords. OTPs. Tokens. All Broken." section -->
-  <section id="why-pteri" class="py-20 bg-[#070d1f]">
+  <section id="why-pteri" class="py-20 bg-page-mid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <!-- Header -->
       <div data-aos="fade-up" class="text-center mb-14">
@@ -15,7 +15,7 @@
       <!-- Comparison grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Passwords -->
-        <div data-aos="fade-up" data-aos-delay="0" class="bg-[#0d1530] border border-red-500/20 rounded-2xl p-6 hover:border-red-500/40 transition-colors">
+        <div data-aos="fade-up" data-aos-delay="0" class="bg-card-dark border border-red-500/20 rounded-2xl p-6 hover:border-red-500/40 transition-colors">
           <div class="w-12 h-12 bg-red-500/10 border border-red-500/20 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -39,7 +39,7 @@
         </div>
 
         <!-- OTPs / SMS -->
-        <div data-aos="fade-up" data-aos-delay="100" class="bg-[#0d1530] border border-orange-500/20 rounded-2xl p-6 hover:border-orange-500/40 transition-colors">
+        <div data-aos="fade-up" data-aos-delay="100" class="bg-card-dark border border-orange-500/20 rounded-2xl p-6 hover:border-orange-500/40 transition-colors">
           <div class="w-12 h-12 bg-orange-500/10 border border-orange-500/20 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
@@ -63,7 +63,7 @@
         </div>
 
         <!-- API Tokens -->
-        <div data-aos="fade-up" data-aos-delay="200" class="bg-[#0d1530] border border-yellow-500/20 rounded-2xl p-6 hover:border-yellow-500/40 transition-colors">
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-card-dark border border-yellow-500/20 rounded-2xl p-6 hover:border-yellow-500/40 transition-colors">
           <div class="w-12 h-12 bg-yellow-500/10 border border-yellow-500/20 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>

@@ -1,6 +1,6 @@
 <template>
   <!-- "How Authentication Works" section -->
-  <section id="how-it-works" class="py-20 bg-[#070d1f]">
+  <section id="how-it-works" class="py-20 bg-page-mid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <!-- Header -->
       <div data-aos="fade-up" class="text-center mb-14">

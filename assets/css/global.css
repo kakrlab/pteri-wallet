@@ -4,3 +4,14 @@ body {
   max-width: 100vw;
   scroll-behavior: smooth;
 }
+
+/* ─── Dark background utilities ─────────────────────────────────────────────
+   Defined here so Tailwind purge never removes them in production builds.
+   These are used as section backgrounds throughout the site.
+──────────────────────────────────────────────────────────────────────────── */
+.bg-page-dark   { background-color: #050a1a; }
+.bg-page-mid    { background-color: #070d1f; }
+.bg-card-dark   { background-color: #0d1530; }
+.bg-screen-dark { background-color: #0a0f20; }
+.bg-footer-dark { background-color: #030712; }
+.bg-nav-dark    { background-color: #050a1a; }

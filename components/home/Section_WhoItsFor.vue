@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 bg-[#070d1f]">
+  <section class="py-16 bg-page-mid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div data-aos="fade-up" class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Who Uses PTERI Wallet?</h2>
@@ -10,7 +10,7 @@
         <div v-for="(item, index) in audience" :key="item.title"
           data-aos="fade-up"
           :data-aos-delay="index * 100"
-          class="bg-[#0d1530] border border-white/10 rounded-2xl p-6 text-center hover:border-blue-500/30 transition-all duration-300 group">
+          class="bg-card-dark border border-white/10 rounded-2xl p-6 text-center hover:border-blue-500/30 transition-all duration-300 group">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 border transition-all group-hover:scale-110"
             :class="item.bgClass">
             <svg class="w-7 h-7" :class="item.iconClass" fill="none" stroke="currentColor" viewBox="0 0 24 24">

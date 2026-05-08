@@ -10,7 +10,7 @@
         <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="close" />
 
         <!-- Modal panel -->
-        <div class="relative z-10 w-full max-w-lg bg-[#0d1530] border border-white/10 rounded-3xl shadow-2xl shadow-blue-900/40 overflow-hidden">
+        <div class="relative z-10 w-full max-w-lg bg-card-dark border border-white/10 rounded-3xl shadow-2xl shadow-blue-900/40 overflow-hidden">
 
           <!-- Top glow accent -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 rounded-full" />

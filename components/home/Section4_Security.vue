@@ -1,6 +1,6 @@
 <template>
   <!-- "Why PTERI MFA?" + "Built for the AI Era" section -->
-  <section id="mfa" class="py-20 bg-[#050a1a]">
+  <section id="mfa" class="py-20 bg-page-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
@@ -29,7 +29,7 @@
         <div data-aos="fade-left" class="relative">
           <!-- Background glow -->
           <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-3xl blur-xl"></div>
-          <div class="relative bg-[#0d1530] border border-white/10 rounded-3xl p-8 overflow-hidden">
+          <div class="relative bg-card-dark border border-white/10 rounded-3xl p-8 overflow-hidden">
             <!-- Decorative orb -->
             <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/20 rounded-full blur-2xl"></div>
             <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-600/20 rounded-full blur-2xl"></div>

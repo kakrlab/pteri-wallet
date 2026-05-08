@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative overflow-hidden bg-[#050a1a] min-h-screen flex items-center">
+  <section id="hero" class="relative overflow-hidden bg-page-dark min-h-screen flex items-center">
     <!-- Animated background glow -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
@@ -152,7 +152,7 @@
             </div>
 
             <!-- Floating Login Request Card -->
-            <div class="absolute -right-2 sm:-right-10 top-6 w-48 bg-[#0d1530] border border-white/20 rounded-2xl p-3.5 shadow-2xl shadow-purple-900/30 backdrop-blur-sm z-30">
+            <div class="absolute -right-2 sm:-right-10 top-6 w-48 bg-card-dark border border-white/20 rounded-2xl p-3.5 shadow-2xl shadow-purple-900/30 backdrop-blur-sm z-30">
               <div class="flex items-center gap-2 mb-2">
                 <div class="w-7 h-7 bg-blue-600/30 border border-blue-500/30 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -173,7 +173,7 @@
             </div>
 
             <!-- Floating Litecoin badge -->
-            <div class="absolute -left-2 sm:-left-10 bottom-16 w-32 bg-[#0d1530] border border-white/20 rounded-xl p-2.5 shadow-xl backdrop-blur-sm z-30">
+            <div class="absolute -left-2 sm:-left-10 bottom-16 w-32 bg-card-dark border border-white/20 rounded-xl p-2.5 shadow-xl backdrop-blur-sm z-30">
               <div class="flex items-center gap-2">
                 <div class="w-7 h-7 bg-[#345D9D]/30 border border-[#345D9D]/50 rounded-full flex items-center justify-center flex-shrink-0">
                   <span class="text-[#345D9D] font-bold text-sm">Ł</span>

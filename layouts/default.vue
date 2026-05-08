@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#050a1a] min-h-screen overflow-x-hidden">
+  <div class="bg-page-dark min-h-screen overflow-x-hidden">
     <cytonav class="sticky top-0 z-50" />
     <slot />
     <cytofooter />

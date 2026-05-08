@@ -1,6 +1,6 @@
 <template>
   <!-- Security Trust section (dark themed) -->
-  <section id="security" class="py-20 bg-[#070d1f]">
+  <section id="security" class="py-20 bg-page-mid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div data-aos="fade-up" class="text-center mb-14">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Security by Design</h2>
@@ -11,7 +11,7 @@
         <div v-for="(item, index) in securityItems" :key="item.title"
           data-aos="fade-up"
           :data-aos-delay="index * 80"
-          class="bg-[#0d1530] border border-white/10 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-300 group">
+          class="bg-card-dark border border-white/10 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-300 group">
           <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 border transition-all group-hover:scale-110"
             :class="item.bgClass">
             <svg class="w-6 h-6" :class="item.iconClass" fill="none" stroke="currentColor" viewBox="0 0 24 24">
