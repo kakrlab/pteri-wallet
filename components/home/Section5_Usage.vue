@@ -1,6 +1,6 @@
 <template>
   <!-- Security Trust section (dark themed) -->
-  <section class="py-20 bg-[#070d1f]">
+  <section id="security" class="py-20 bg-[#070d1f]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div data-aos="fade-up" class="text-center mb-14">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Security by Design</h2>

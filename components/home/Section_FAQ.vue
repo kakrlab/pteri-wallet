@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-[#070d1f]">
+  <section id="faq" class="py-20 bg-[#070d1f]">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       <div data-aos="fade-up" class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>

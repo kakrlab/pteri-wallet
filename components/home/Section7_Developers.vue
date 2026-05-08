@@ -1,6 +1,6 @@
 <template>
   <!-- Developer Platform & MFA Infrastructure section -->
-  <section class="py-20 bg-[#070d1f]">
+  <section id="developers" class="py-20 bg-[#070d1f]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -52,31 +52,80 @@
                 <div class="w-3 h-3 rounded-full bg-green-500/70"></div>
               </div>
               <div class="flex gap-1 ml-4">
-                <button class="px-3 py-1 text-xs text-white bg-white/10 rounded-md">Node.js</button>
-                <button class="px-3 py-1 text-xs text-gray-500 hover:text-gray-300 rounded-md">Python</button>
-                <button class="px-3 py-1 text-xs text-gray-500 hover:text-gray-300 rounded-md">cURL</button>
+                <button
+                  v-for="tab in tabs" :key="tab"
+                  @click="activeTab = tab"
+                  class="px-3 py-1 text-xs rounded-md transition-colors duration-150"
+                  :class="activeTab === tab
+                    ? 'text-white bg-white/10'
+                    : 'text-gray-500 hover:text-gray-300'"
+                >{{ tab }}</button>
               </div>
             </div>
             <!-- Code -->
-            <div class="p-5 font-mono text-sm leading-relaxed overflow-x-auto">
-              <p class="text-gray-500">// Import PTERI client</p>
-              <p><span class="text-blue-400">import</span> <span class="text-white">&#123; PteriClient &#125;</span> <span class="text-blue-400">from</span> <span class="text-green-400">'@pteri-sdk'</span></p>
-              <br>
-              <p class="text-gray-500">// Create authentication challenge</p>
-              <p><span class="text-blue-400">const</span> <span class="text-white">pteri</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">PteriClient</span><span class="text-white">(</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">)</span></p>
-              <p><span class="text-blue-400">const</span> <span class="text-white">challenge</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">createChallenge</span><span class="text-white">(&#123;</span></p>
-              <p class="pl-4"><span class="text-cyan-300">userId</span><span class="text-white">:</span> <span class="text-green-400">'user_123'</span><span class="text-white">,</span></p>
-              <p class="pl-4"><span class="text-cyan-300">appId</span><span class="text-white">:</span> <span class="text-green-400">'app_abc'</span><span class="text-white">,</span></p>
-              <p><span class="text-white">&#125;)</span></p>
-              <br>
-              <p class="text-gray-500">// User signs the challenge in PTERI Wallet</p>
-              <p><span class="text-blue-400">const</span> <span class="text-white">signature</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">getSignature</span><span class="text-white">(challenge)</span></p>
-              <br>
-              <p class="text-gray-500">// Verify signature</p>
-              <p><span class="text-blue-400">const</span> <span class="text-white">result</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">verify</span><span class="text-white">(&#123;</span></p>
-              <p class="pl-4"><span class="text-cyan-300">challengeId</span><span class="text-white">:</span> <span class="text-white">challenge</span><span class="text-gray-400">.</span><span class="text-white">id,</span></p>
-              <p class="pl-4"><span class="text-cyan-300">signature</span><span class="text-white">:</span> <span class="text-white">signature</span></p>
-              <p><span class="text-white">&#125;)</span></p>
+            <div class="p-5 font-mono text-sm leading-relaxed overflow-x-auto min-h-[280px]">
+
+              <!-- Node.js -->
+              <template v-if="activeTab === 'Node.js'">
+                <p class="text-gray-500">// Import PTERI client</p>
+                <p><span class="text-blue-400">import</span> <span class="text-white">&#123; PteriClient &#125;</span> <span class="text-blue-400">from</span> <span class="text-green-400">'@pteri-sdk'</span></p>
+                <br>
+                <p class="text-gray-500">// Create authentication challenge</p>
+                <p><span class="text-blue-400">const</span> <span class="text-white">pteri</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">PteriClient</span><span class="text-white">(</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">)</span></p>
+                <p><span class="text-blue-400">const</span> <span class="text-white">challenge</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">createChallenge</span><span class="text-white">(&#123;</span></p>
+                <p class="pl-4"><span class="text-cyan-300">userId</span><span class="text-white">:</span> <span class="text-green-400">'user_123'</span><span class="text-white">,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">appId</span><span class="text-white">:</span> <span class="text-green-400">'app_abc'</span><span class="text-white">,</span></p>
+                <p><span class="text-white">&#125;)</span></p>
+                <br>
+                <p class="text-gray-500">// User signs the challenge in PTERI Wallet</p>
+                <p><span class="text-blue-400">const</span> <span class="text-white">signature</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">getSignature</span><span class="text-white">(challenge)</span></p>
+                <br>
+                <p class="text-gray-500">// Verify signature</p>
+                <p><span class="text-blue-400">const</span> <span class="text-white">result</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">verify</span><span class="text-white">(&#123;</span></p>
+                <p class="pl-4"><span class="text-cyan-300">challengeId</span><span class="text-white">:</span> <span class="text-white">challenge</span><span class="text-gray-400">.</span><span class="text-white">id,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">signature</span><span class="text-white">:</span> <span class="text-white">signature</span></p>
+                <p><span class="text-white">&#125;)</span></p>
+              </template>
+
+              <!-- Python -->
+              <template v-else-if="activeTab === 'Python'">
+                <p class="text-gray-500"># Import PTERI client</p>
+                <p><span class="text-blue-400">from</span> <span class="text-white">pteri_sdk</span> <span class="text-blue-400">import</span> <span class="text-yellow-300">PteriClient</span></p>
+                <br>
+                <p class="text-gray-500"># Create authentication challenge</p>
+                <p><span class="text-white">pteri</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">PteriClient</span><span class="text-white">(</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">)</span></p>
+                <p><span class="text-white">challenge</span> <span class="text-blue-400">=</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">create_challenge</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-cyan-300">user_id</span><span class="text-white">=</span><span class="text-green-400">'user_123'</span><span class="text-white">,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">app_id</span><span class="text-white">=</span><span class="text-green-400">'app_abc'</span></p>
+                <p><span class="text-white">)</span></p>
+                <br>
+                <p class="text-gray-500"># User signs the challenge in PTERI Wallet</p>
+                <p><span class="text-white">signature</span> <span class="text-blue-400">=</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">get_signature</span><span class="text-white">(challenge)</span></p>
+                <br>
+                <p class="text-gray-500"># Verify signature</p>
+                <p><span class="text-white">result</span> <span class="text-blue-400">=</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">verify</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-cyan-300">challenge_id</span><span class="text-white">=</span><span class="text-white">challenge</span><span class="text-gray-400">.</span><span class="text-white">id,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">signature</span><span class="text-white">=</span><span class="text-white">signature</span></p>
+                <p><span class="text-white">)</span></p>
+              </template>
+
+              <!-- cURL -->
+              <template v-else-if="activeTab === 'cURL'">
+                <p class="text-gray-500"># Create authentication challenge</p>
+                <p><span class="text-yellow-300">curl</span> <span class="text-white">-X POST</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-green-400">'https://api.kakrlabs.com/v1/challenge'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Authorization: Bearer YOUR_API_KEY'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Content-Type: application/json'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-d</span> <span class="text-green-400">'&#123;"userId":"user_123","appId":"app_abc"&#125;'</span></p>
+                <br>
+                <p class="text-gray-500"># Verify signature</p>
+                <p><span class="text-yellow-300">curl</span> <span class="text-white">-X POST</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-green-400">'https://api.kakrlabs.com/v1/verify'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Authorization: Bearer YOUR_API_KEY'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Content-Type: application/json'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-d</span> <span class="text-green-400">'&#123;"challengeId":"&lt;id&gt;","signature":"&lt;sig&gt;"&#125;'</span></p>
+              </template>
+
             </div>
           </div>
 
@@ -102,6 +151,9 @@
 </template>
 
 <script setup>
+const tabs = ['Node.js', 'Python', 'cURL']
+const activeTab = ref('Node.js')
+
 const devFeatures = [
   'Easy SDKs & Libraries (Node.js, Python, iOS, Android)',
   'RESTful APIs with Real-time Webhooks',

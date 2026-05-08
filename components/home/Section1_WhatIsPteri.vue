@@ -1,6 +1,6 @@
 <template>
   <!-- "What is PTERI Wallet?" section -->
-  <section class="py-20 bg-[#050a1a]">
+  <section id="what-is-pteri" class="py-20 bg-[#050a1a]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <!-- Header -->
       <div data-aos="fade-up" class="text-center mb-14">
