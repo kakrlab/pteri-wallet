@@ -55,15 +55,8 @@ gtag('config', 'G-BMJ6F1C4GG');`,
   ],
 
   tailwindcss: {
-    config: {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Poppins', 'ui-sans-serif', 'system-ui'], // Set Poppins as the default sans font
-          },
-        },
-      },
-    },
+    configPath: '~/tailwind.config.js',
+    exposeConfig: false,
   },
 
   compatibilityDate: '2024-10-16',
