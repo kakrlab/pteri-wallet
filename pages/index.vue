@@ -11,9 +11,9 @@
     <SectionWhoItsFor />
     <HomeSection6Litecoin />
     <HomeSection7Developers />
-    <HomeSection8GetStarted />
     <SectionFAQ />
     <SectionHelpCTA />
+    <HomeSection8GetStarted />
   </div>
 </template>
 
