@@ -6,7 +6,7 @@
         <p class="text-gray-400 text-lg">Built for everyone who values security and privacy.</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <div v-for="(item, index) in audience" :key="item.title"
           data-aos="fade-up"
           :data-aos-delay="index * 100"

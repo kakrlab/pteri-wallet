@@ -2,7 +2,7 @@
   <!-- "Why PTERI MFA?" + "Built for the AI Era" section -->
   <section id="mfa" class="py-20 bg-page-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
         <!-- Left: Why PTERI MFA? -->
         <div data-aos="fade-right">

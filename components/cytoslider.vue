@@ -9,8 +9,8 @@
 
     <!-- Star field -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div v-for="i in 60" :key="i" class="absolute w-0.5 h-0.5 bg-white rounded-full opacity-40"
-        :style="{ top: Math.random() * 100 + '%', left: Math.random() * 100 + '%', animationDelay: Math.random() * 3 + 's' }">
+      <div v-for="star in stars" :key="star.id" class="absolute w-0.5 h-0.5 bg-white rounded-full opacity-40"
+        :style="{ top: star.top, left: star.left, animationDelay: star.animationDelay }">
       </div>
     </div>
 
@@ -219,6 +219,16 @@ const screenshots = [
   { src: '/new/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-03 at 00.30.13.png', alt: 'PTERI Wallet Screen 19' },
   { src: '/new/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-03 at 00.30.19.png', alt: 'PTERI Wallet Screen 20' },
 ]
+
+const stars = Array.from({ length: 60 }, (_, index) => {
+  const seed = index + 1
+  return {
+    id: seed,
+    top: `${(seed * 37) % 100}%`,
+    left: `${(seed * 61) % 100}%`,
+    animationDelay: `${((seed * 17) % 30) / 10}s`,
+  }
+})
 
 const current = ref(0)
 let timer = null

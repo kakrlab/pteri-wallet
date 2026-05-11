@@ -3,7 +3,6 @@
     <cytoslider />
     <HomeSection1WhatIsPteri />
     <HomeSection2WhyDifferent />
-    <SectionSecurityTrust />
     <HomeSection3WalletLogin />
     <!-- Keeping original security section as it has different visual style/content -->
     <HomeSection4Security />
@@ -29,7 +28,6 @@ import HomeSection7Developers from '~/components/home/Section7_Developers.vue'
 import HomeSection8GetStarted from '~/components/home/Section8_GetStarted.vue'
 
 // New Components
-import SectionSecurityTrust from '~/components/home/Section_SecurityTrust.vue'
 import SectionWhoItsFor from '~/components/home/Section_WhoItsFor.vue'
 import SectionFAQ from '~/components/home/Section_FAQ.vue'
 import SectionHelpCTA from '~/components/home/Section_HelpCTA.vue'

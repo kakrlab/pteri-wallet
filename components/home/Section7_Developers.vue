@@ -2,7 +2,7 @@
   <!-- Developer Platform & MFA Infrastructure section -->
   <section id="developers" class="py-20 bg-page-mid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         <!-- Left: Description -->
         <div data-aos="fade-right">
@@ -44,7 +44,6 @@
         <div data-aos="fade-left" class="flex flex-col gap-6">
           <!-- Code block -->
           <div class="bg-screen-dark border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
-            <ClientOnly>
             <!-- Tab bar -->
             <div class="flex items-center gap-1 px-4 py-3 bg-card-dark border-b border-white/10">
               <div class="flex gap-1.5">
@@ -128,7 +127,6 @@
               </template>
 
             </div>
-            </ClientOnly>
           </div>
 
           <!-- Side feature cards -->
