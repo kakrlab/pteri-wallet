@@ -24,3 +24,7 @@ export default {
 <style>
 
 </style>
+
+<script setup>
+definePageMeta({ layout: 'wallet' })
+</script>

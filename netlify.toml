@@ -6,6 +6,18 @@
   NODE_VERSION = "18"
 
 [[redirects]]
+  from = "/privacy"
+  to = "/about/privacy-policy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms"
+  to = "/about/terms-of-service/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/global.css'],
+  css: ['~/assets/css/global.css', '~/assets/css/pteri-wallet.css'],
   app: {
     baseURL: '/',
     head: {
@@ -29,8 +29,8 @@ gtag('config', 'G-BMJ6F1C4GG');`,
         // Default OG tags (can be overridden per page)
         { property: 'og:site_name', content: 'PTERI Wallet' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'PTERI Wallet – Secure Self-Custody Litecoin Wallet' },
-        { property: 'og:description', content: 'PTERI Wallet is a secure self-custody Litecoin wallet for identity, trust, payments, privacy, and blockchain-based authentication.' },
+        { property: 'og:title', content: 'PTERI Wallet — Litecoin and supported signing experiences' },
+        { property: 'og:description', content: 'Choose your PTERI Wallet experience, plan a compatible restore, and explore wallet and supported signing guidance.' },
         { property: 'og:url', content: 'https://pteri.kakr.org' },
         { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
         { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
@@ -68,7 +68,7 @@ gtag('config', 'G-BMJ6F1C4GG');`,
     },
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/', '/get-started', '/security', '/compatibility', '/help', '/about/privacy-policy', '/about/terms-of-service']
     }
   },
 })

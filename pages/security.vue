@@ -1,90 +1,66 @@
 <template>
-  <Head>
-    <Title>PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy</Title>
-    <Meta name="description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
-    <Meta property="og:title" content="PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy" />
-    <Meta property="og:description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
-    <Meta property="og:type" content="website" />
-    <Meta property="og:url" content="https://pteri.kakr.org/security" />
-    <Meta property="og:image" content="https://pteri.kakr.org/pteri-wallet-og.jpg" />
-    <Meta property="og:image:secure_url" content="https://pteri.kakr.org/pteri-wallet-og.jpg" />
-    <Meta property="og:image:type" content="image/jpeg" />
-    <Meta property="og:image:width" content="1200" />
-    <Meta property="og:image:height" content="630" />
-    <Meta property="og:image:alt" content="PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy" />
-    <Meta name="twitter:card" content="summary_large_image" />
-    <Meta name="twitter:title" content="PTERI Wallet Security — Zero-Custody, Encryption & MWEB Privacy" />
-    <Meta name="twitter:description" content="Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy." />
-    <Meta name="twitter:image" content="https://pteri.kakr.org/pteri-wallet-og.jpg" />
-    <Meta name="twitter:site" content="@pteriwallet" />
-  </Head>
+  <main id="main-content" tabindex="-1">
+    <PwPageIntro crumb="Security & Recovery" eyebrow="SECURITY & RECOVERY">
+      <template #title>Know your wallet.<br><em>Prepare for recovery.</em></template>
+      Understand everyday access, recovery requirements, and what to review before approving an operation.
+    </PwPageIntro>
 
-  <div class="container mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold mb-8">PTERI Wallet Security</h1>
-    <p class="text-xl mb-12">Learn how PTERI Wallet protects your Litecoin and identity with secure enclave, biometric unlock, encryption, and MWEB privacy.</p>
-    
-    <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
-      <h2 class="text-2xl font-bold mb-6">Our Security Principles</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="border-l-4 border-blue-500 pl-4 py-2">
-          <h3 class="text-xl font-bold mb-2">Zero-Custody</h3>
-          <p class="text-gray-700">We never have access to your private keys or funds. You are the sole owner of your assets.</p>
+    <section class="container bottom-space">
+      <div class="security-grid">
+        <div class="path"><span class="num">01</span><h3>Everyday access</h3><p>Use the unlocking method supported by your release. Protect the device and browser where you use the wallet.</p><NuxtLink class="subtle-link" to="/help#return">Returning to a wallet</NuxtLink></div>
+        <div class="path"><span class="num">02</span><h3>Recovery access</h3><p>Keep the required recovery material available independently of this device. Confirm the restoration format before switching wallets.</p><NuxtLink class="subtle-link" to="/compatibility">Check restoration compatibility</NuxtLink></div>
+      </div>
+    </section>
+
+    <section class="signature-section">
+      <div class="section container split">
+        <div>
+          <div class="eyebrow">READ BEFORE YOU ACT</div>
+          <h2>Some moments deserve<br>an extra check.</h2>
+          <p>Move through setup, restoration, and approval with the instructions for your selected wallet release.</p>
         </div>
-        
-        <div class="border-l-4 border-green-500 pl-4 py-2">
-          <h3 class="text-xl font-bold mb-2">Device-Side Encryption</h3>
-          <p class="text-gray-700">All sensitive data is encrypted directly on your device, never transmitted unencrypted.</p>
-        </div>
-        
-        <div class="border-l-4 border-purple-500 pl-4 py-2">
-          <h3 class="text-xl font-bold mb-2">Biometric Protection</h3>
-          <p class="text-gray-700">Access your wallet securely using fingerprint or facial recognition stored only on your device.</p>
-        </div>
-        
-        <div class="border-l-4 border-yellow-500 pl-4 py-2">
-          <h3 class="text-xl font-bold mb-2">MWEB Privacy</h3>
-          <p class="text-gray-700">Confidential transactions protect your financial privacy with Mimblewimble Extension Block.</p>
+        <div class="steps">
+          <div class="step"><span class="num">01</span><div><h3>Changing your device or browser?</h3><p>Read the backup guidance before clearing local data or resetting a device. A password alone may not restore access.</p></div></div>
+          <div class="step"><span class="num">02</span><div><h3>Reviewing a transfer?</h3><p>Check the network, destination, amount, and fees. Signing, submission, and network confirmation are separate stages.</p></div></div>
+          <div class="step"><span class="num">03</span><div><h3>Approving an application request?</h3><p>Check the requesting application and the action details. Do not approve a request you do not understand.</p></div></div>
         </div>
       </div>
-    </div>
-    
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-      <!-- Security Feature 1 -->
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <div class="text-blue-600 text-4xl mb-4">🔒</div>
-        <h3 class="text-xl font-bold mb-3">Secure Enclave Storage</h3>
-        <p class="text-gray-700">Private keys are stored in your device's secure hardware enclave, isolated from the operating system.</p>
+    </section>
+
+    <section class="section container">
+      <div class="banner">
+        <div>
+          <h2>Recovery material is not a support attachment.</h2>
+          <p>Never send recovery phrases, private keys, passwords, or wallet backups to support. Describe the problem using redacted details.</p>
+        </div>
+        <PwButton to="/help#contact">How to ask for help</PwButton>
       </div>
-      
-      <!-- Security Feature 2 -->
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <div class="text-green-600 text-4xl mb-4">📱</div>
-        <h3 class="text-xl font-bold mb-3">Biometric Unlock</h3>
-        <p class="text-gray-700">Access your wallet quickly and securely using your device's biometric authentication systems.</p>
+    </section>
+
+    <section class="section container">
+      <div class="section-head"><div><div class="eyebrow">KNOW THE BOUNDARIES</div><h2>Clear answers. No blanket promises.</h2></div></div>
+      <div class="faq">
+        <details><summary>Can KAKR Labs guarantee recovery?</summary><p>No. Recovery depends on the wallet’s recovery mechanism, compatible software, and the information you retained. Support can help explain the supported process.</p></details>
+        <details><summary>Does browser storage work like mobile storage?</summary><p>Do not assume the same storage or unlocking behavior across platforms. Read the information for your exact release before clearing data or changing devices.</p></details>
+        <details><summary>Does every transfer use MWEB?</summary><p>Do not assume that MWEB is available for every wallet operation or address. Check the current release and the privacy boundaries of the transfer path.</p></details>
+        <details><summary>Where should I look for technical security details?</summary><p>Use the current documentation and company security overview. Confirm the signing, storage, and data-processing boundary for the specific workflow you intend to use.</p></details>
       </div>
-      
-      <!-- Security Feature 3 -->
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <div class="text-purple-600 text-4xl mb-4">🔄</div>
-        <h3 class="text-xl font-bold mb-3">Multi-Layer Encryption</h3>
-        <p class="text-gray-700">Data is protected with multiple layers of encryption both at rest and in transit.</p>
+      <div class="actions" style="margin-top:25px">
+        <PwButton to="/compatibility" primary>Check compatibility</PwButton>
+        <PwButton :to="links.companySecurity">Company security overview</PwButton>
       </div>
-    </div>
-    
-    <div class="bg-blue-50 p-8 rounded-lg">
-      <h2 class="text-2xl font-bold mb-4">Security Best Practices</h2>
-      <ul class="list-disc pl-6 space-y-3 text-gray-700">
-        <li>Never share your recovery phrase with anyone</li>
-        <li>Enable biometric authentication on your device</li>
-        <li>Keep your device's operating system updated</li>
-        <li>Only download PTERI Wallet from official app stores</li>
-        <li>Regularly review transaction history for unauthorized activity</li>
-      </ul>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
-<script setup>
-// Add any necessary logic here
+<script setup lang="ts">
+import { links } from '~/data/wallet'
+
+definePageMeta({ layout: 'wallet' })
+
+usePwSeo(
+  'Security & Recovery | PTERI Wallet',
+  'Understand everyday wallet access, recovery preparation, and what to review before approving a transfer or application request.',
+  '/security',
+)
 </script>

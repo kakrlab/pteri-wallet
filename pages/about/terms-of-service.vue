@@ -145,3 +145,7 @@ export default {};
 </script>
 
 <style scoped></style>
+
+<script setup>
+definePageMeta({ layout: 'wallet' })
+</script>
