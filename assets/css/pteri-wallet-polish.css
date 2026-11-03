@@ -78,3 +78,40 @@
 
 /* Global html/body overflow-x:hidden makes body a scroll container and breaks position:sticky; clip does not. */
 html:has(.pw),html:has(.pw) body{overflow-x:clip}
+
+/* Larger type scale (kakr.ai-like readability). Body copy 15-17px, small text never below 14px. */
+.pw{font-size:17px;line-height:1.7}
+.pw .lede{font-size:19px;max-width:600px}
+.pw .page-intro .lede{font-size:18px}
+.pw .eyebrow{font-size:13px}
+.pw h3{font-size:21px}
+.pw .path p,.pw .setup-panel p,.pw .help-block p,.pw .device p,.pw details p,.pw .section-head p,.pw .split p,.pw .banner p,.pw .security-pillars p,.pw .step p,.pw .checklist li,.pw .flow-row,.pw .compact-list li,.pw .security-bridge p{font-size:16px}
+.pw .micro,.pw .quote-note,.pw .subtle-link,.pw .checklist li small,.pw .flow-row small,.pw .compact-list li span,.pw .live-note,.pw .result-count,.pw .theme-label,.pw .theme-controls .micro,.pw .screenshot-grid figcaption p,.pw .app-caption,.pw .theme-preview figcaption,.pw .num,.pw .pill,.pw .device .label,.pw .security-pillars span,.pw .breadcrumb,.pw .trademark-credit,.pw .footer-bottom{font-size:14px!important}
+.pw .theme-choice,.pw .choice-tabs button{font-size:14px}
+.pw .button{font-size:15px;padding:14px 22px}
+.pw .button.small{font-size:14px}
+.pw .mainnav a,.pw .platform{font-size:14px}
+.pw .brand strong{font-size:18px}
+.pw .brand small{font-size:12px}
+.pw summary{font-size:17px}
+.pw .screenshot-grid figcaption strong{font-size:17px}
+.pw .security-pillars h3{font-size:23px}
+.pw .setup-panel h2,.pw .help-block h2{font-size:30px}
+.pw .banner h2{font-size:30px}
+.pw .searchbox{font-size:16px}
+.pw .guide-nav a{font-size:14px}
+.pw .footer p,.pw .footer strong,.pw .footer a:not(.brand){font-size:14px}
+.pw .footer strong{font-size:15px}
+@media (min-width:801px){
+  .pw h1{font-size:68px}
+  .pw .page-intro h1{font-size:56px}
+  .pw h2{font-size:40px}
+}
+@media (max-width:800px){
+  .pw h2{font-size:32px}
+  .pw .lede{font-size:17px}
+}
+@media (max-width:1050px) and (min-width:801px){
+  .pw .mainnav{gap:16px}
+}
+@media (min-width:801px) and (max-width:1150px){.pw h1{font-size:56px}.pw .page-intro h1{font-size:48px}}
