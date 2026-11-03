@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pw-head">
     <a class="skip" href="#main-content" @click.prevent="skipToMain">Skip to content</a>
     <header class="site-header">
       <PwBrand />

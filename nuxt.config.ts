@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/global.css', '~/assets/css/pteri-wallet.css'],
+  css: ['~/assets/css/global.css', '~/assets/css/pteri-wallet.css', '~/assets/css/pteri-wallet-polish.css'],
   app: {
     baseURL: '/',
     head: {
@@ -49,6 +49,7 @@ gtag('config', 'G-BMJ6F1C4GG');`,
     ['@nuxtjs/google-fonts', {
       families: {
         Poppins: [300, 400, 500, 600, 700],
+        Inter: [400, 500, 600, 700, 800],
       },
       display: 'swap',
     }],
