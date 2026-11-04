@@ -125,7 +125,7 @@ html:has(.pw),html:has(.pw) body{overflow-x:clip}
 .pw .store-badge .google-badge{height:112px;width:auto;margin-left:-6px}
 .pw .device .micro,.pw .device>.subtle-link{min-height:44px;display:flex;align-items:flex-start;line-height:1.5}
 @media (max-width:1050px) and (min-width:801px){.pw .device .store-badge,.pw .device .web-download{height:auto;margin-top:0}}
-@media (max-width:800px){.pw .device .store-badge,.pw .device .web-download{margin-top:4px;height:auto;min-height:0}.pw .store-badge .google-badge{height:100px;margin-left:-5px}.pw .device .micro,.pw .device>.subtle-link{min-height:0}}
+@media (max-width:800px){.pw .device .store-badge,.pw .device .web-download{margin-top:4px;height:auto;min-height:0;align-self:flex-start}.pw .store-badge .google-badge{height:100px;margin-left:-5px}.pw .device .micro,.pw .device>.subtle-link{min-height:0}}
 
 /* Second bump: body copy 17px, small text 15px */
 .pw{font-size:17px}
