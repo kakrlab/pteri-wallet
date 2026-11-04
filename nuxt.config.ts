@@ -14,14 +14,23 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-BMJ6F1C4GG',
-          async: true,
-        },
-        {
+          // Load Google Analytics after first interaction or when the browser is idle, so it does not block the main thread during load.
           innerHTML: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-BMJ6F1C4GG');`,
+gtag('config', 'G-BMJ6F1C4GG');
+(function(){
+  var loaded = false;
+  function load(){
+    if (loaded) return; loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BMJ6F1C4GG';
+    document.head.appendChild(s);
+  }
+  ['pointerdown','keydown','scroll','touchstart'].forEach(function(e){ window.addEventListener(e, load, { once: true, passive: true }); });
+  window.addEventListener('load', function(){ setTimeout(load, 7000); });
+})();`,
         },
       ],
       meta: [

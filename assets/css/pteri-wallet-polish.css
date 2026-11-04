@@ -138,3 +138,6 @@ html:has(.pw),html:has(.pw) body{overflow-x:clip}
 .pw .footer strong,.pw summary,.pw .searchbox{font-size:17px}
 .pw h3{font-size:23px}
 @media (max-width:800px){.pw .lede{font-size:17px}.pw .path p,.pw .setup-panel p,.pw .help-block p,.pw .device p,.pw details p,.pw .section-head p,.pw .split p,.pw .banner p,.pw .security-pillars p,.pw .step p{font-size:16px}}
+
+/* Skip style/layout work for sections far below the first screen until they are near the viewport. */
+.pw main>section:not(:first-child){content-visibility:auto;contain-intrinsic-size:auto 720px}

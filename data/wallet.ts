@@ -50,9 +50,9 @@ export const walletThemes = themeNames.map(([n, label, accent, background]) => (
 }))
 
 export const captures = {
-  overview: '/wallet/screenshots/overview.png',
-  signing: '/wallet/screenshots/signing.png',
-  welcome: '/wallet/screenshots/welcome.png',
+  overview: '/wallet/screenshots/overview.webp',
+  signing: '/wallet/screenshots/signing.webp',
+  welcome: '/wallet/screenshots/welcome.webp',
 }
 
 export const capabilities = [

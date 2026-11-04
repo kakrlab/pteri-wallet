@@ -13,8 +13,8 @@
       </div>
       <div class="hero-apps">
         <div class="orbit" />
-        <img class="app-capture front" :src="captures.overview" alt="Published PTERI wallet overview with a zero Litecoin balance" width="1320" height="2868">
-        <img class="app-capture rear" :src="captures.signing" alt="Published iOS simulator screen showing message signing" width="1320" height="2868">
+        <img class="app-capture front" fetchpriority="high" decoding="async" :src="captures.overview" alt="Published PTERI wallet overview with a zero Litecoin balance" width="1320" height="2868">
+        <img class="app-capture rear" fetchpriority="high" decoding="async" :src="captures.signing" alt="Published iOS simulator screen showing message signing" width="1320" height="2868">
         <span class="app-caption">Published iOS simulator screens · Features vary by release</span>
       </div>
     </section>

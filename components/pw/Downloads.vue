@@ -12,7 +12,7 @@
       <h3>PTERI Wallet for<br>Android.</h3>
       <p>Bring your wallet to your Android device. See the current release and device requirements on Google Play.</p>
       <!-- LAUNCH BLOCKER: unmodified public guideline sample. Replace with the production export obtained under the app owner's Google artwork terms; keep the clear space. -->
-      <a class="store-badge" :href="links.android" aria-label="Get PTERI Wallet on Google Play"><img class="google-badge" src="/wallet/badges/google-play-official-reference.png" alt="Get it on Google Play" width="178" height="116"></a>
+      <a class="store-badge" :href="links.android" aria-label="Get PTERI Wallet on Google Play"><img class="google-badge" src="/wallet/badges/google-play-official-reference.webp" alt="Get it on Google Play" width="178" height="116"></a>
       <span class="micro">Check the app and publisher before installing.</span>
     </div>
     <div class="device">
