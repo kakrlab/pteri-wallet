@@ -1,0 +1,23 @@
+# PTERI Wallet
+
+> PTERI Wallet is a Litecoin wallet from KAKR Labs that brings payments, sign-in, added verification, and supported AI-agent approval experiences into one wallet. Availability and features depend on the app release and platform, so check each page and store listing before relying on a feature.
+
+This site covers choosing a platform, setting up or restoring a wallet, security and recovery guidance, and compatibility details.
+
+## Main pages
+
+- [Home](https://pteri.kakr.org/): Overview of PTERI Wallet and the ways to get it (iPhone and iPad, Android, web).
+- [Get Started](https://pteri.kakr.org/get-started): Choose a create, restore, or return path and review the platform and recovery checks before you begin.
+- [Security & Recovery](https://pteri.kakr.org/security): Everyday wallet access, recovery preparation, and what to review before approving a transfer or application request.
+- [Compatibility](https://pteri.kakr.org/compatibility): Platform choices and the formats, address types, and operations to check before creating or restoring a wallet.
+- [Help](https://pteri.kakr.org/help): Guidance on setup, restoration, saved-wallet access, balances, transfers, MWEB, and safe support requests.
+
+## Legal
+
+- [Privacy Policy](https://pteri.kakr.org/about/privacy-policy)
+- [Terms of Service](https://pteri.kakr.org/about/terms-of-service)
+
+## Optional
+
+- [Web Wallet](https://wallet.pteri.org): The browser-based wallet. Review the backup and restoration guidance before you begin.
+- [Sitemap](https://pteri.kakr.org/sitemap.xml)
