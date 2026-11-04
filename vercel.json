@@ -1,11 +1,5 @@
 {
     "framework": "nuxtjs",
     "buildCommand": "npm run generate",
-    "outputDirectory": "dist",
-    "rewrites": [
-        {
-            "source": "/((?!\\.well-known/|.*\\.[A-Za-z0-9]+$).*)",
-            "destination": "/index.html"
-        }
-    ]
+    "outputDirectory": "dist"
 }
