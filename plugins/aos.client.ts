@@ -6,11 +6,12 @@ export default defineNuxtPlugin((nuxtApp) => {
     window.setTimeout(() => {
       window.requestAnimationFrame(() => {
         AOS.init({
-          duration: 700,
+          duration: 800,
           easing: 'ease-out-cubic',
           once: true,
-          offset: 60,
+          offset: 80,
           delay: 0,
+          anchorPlacement: 'top-bottom',
         })
       })
     }, 150)

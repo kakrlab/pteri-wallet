@@ -171,3 +171,7 @@
   }
   </style>
   
+
+<script setup>
+useNoindex()
+</script>

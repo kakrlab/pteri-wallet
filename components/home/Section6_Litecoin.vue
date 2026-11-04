@@ -21,7 +21,9 @@
               PTERI Wallet is powered by Litecoin — the proven, fast, and low-fee blockchain that gives PTERI a stable, trustworthy foundation.
             </p>
             <div class="flex flex-wrap gap-3 justify-center md:justify-start">
-              <span v-for="tag in tags" :key="tag"
+              <span v-for="(tag, index) in tags" :key="tag"
+                data-aos="fade-up"
+                :data-aos-delay="index * 60"
                 class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:border-[#345D9D]/50 hover:text-white transition-colors">
                 {{ tag }}
               </span>

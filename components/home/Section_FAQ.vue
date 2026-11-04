@@ -16,13 +16,9 @@
             @click="toggle(index)"
           >
             <span class="text-white font-semibold text-sm pr-4">{{ faq.question }}</span>
-            <svg
-              class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200"
-              :class="{ 'rotate-180': openIndex === index }"
-              fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="text-gray-400 flex-shrink-0 text-xl font-light leading-none transition-colors duration-200 select-none">
+              {{ openIndex === index ? '−' : '+' }}
+            </span>
           </button>
           <div v-if="openIndex === index" class="px-6 pb-5">
             <div class="text-gray-400 text-sm leading-relaxed" v-html="faq.answer"></div>

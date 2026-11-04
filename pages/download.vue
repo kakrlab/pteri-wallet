@@ -66,5 +66,6 @@
 </template>
 
 <script setup>
+useNoindex()
 // Add any necessary logic here
 </script>

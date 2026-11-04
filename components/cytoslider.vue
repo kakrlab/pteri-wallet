@@ -102,7 +102,7 @@
                   style="height: 560px;">
 
                   <!-- Carousel track -->
-                  <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out"
+                  <div class="carousel-track flex h-full transition-transform duration-700 ease-in-out"
                     :style="{ transform: `translateX(-${current * 100}%)` }">
                     <div
                       v-for="(img, i) in screenshots"
@@ -151,29 +151,8 @@
               </button>
             </div>
 
-            <!-- Floating Login Request Card -->
-            <div class="absolute -right-2 sm:-right-10 top-6 w-48 bg-card-dark border border-white/20 rounded-2xl p-3.5 shadow-2xl shadow-purple-900/30 backdrop-blur-sm z-30">
-              <div class="flex items-center gap-2 mb-2">
-                <div class="w-7 h-7 bg-blue-600/30 border border-blue-500/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                  </svg>
-                </div>
-                <div>
-                  <p class="text-white text-[11px] font-semibold">Login Request</p>
-                  <p class="text-gray-400 text-[9px]">app.example.com</p>
-                </div>
-              </div>
-              <p class="text-gray-400 text-[9px] mb-0.5">Your login is requesting access</p>
-              <p class="text-gray-500 text-[9px] mb-2.5">May 15, 2024 · 12:34 AM<br>New York, USA · Chrome on macOS</p>
-              <div class="flex gap-1.5">
-                <button class="flex-1 py-1 bg-green-500 hover:bg-green-400 text-white text-[10px] font-semibold rounded-lg transition">Approve</button>
-                <button class="flex-1 py-1 bg-white/10 hover:bg-white/20 text-gray-300 text-[10px] font-semibold rounded-lg transition">Deny</button>
-              </div>
-            </div>
-
             <!-- Floating Litecoin badge -->
-            <div class="absolute -left-2 sm:-left-10 bottom-16 w-32 bg-card-dark border border-white/20 rounded-xl p-2.5 shadow-xl backdrop-blur-sm z-30">
+            <div data-aos="fade-right" data-aos-delay="700" class="absolute -left-2 sm:-left-10 bottom-16 w-32 bg-card-dark border border-white/20 rounded-xl p-2.5 shadow-xl backdrop-blur-sm z-30">
               <div class="flex items-center gap-2">
                 <div class="w-7 h-7 bg-[#345D9D]/30 border border-[#345D9D]/50 rounded-full flex items-center justify-center flex-shrink-0">
                   <span class="text-[#345D9D] font-bold text-sm">Ł</span>
@@ -237,7 +216,7 @@ const next = () => { current.value = (current.value + 1) % screenshots.length }
 const prev = () => { current.value = (current.value - 1 + screenshots.length) % screenshots.length }
 const goTo = (i) => { current.value = i }
 
-const startAuto = () => { timer = setInterval(next, 3000) }
+const startAuto = () => { timer = setInterval(next, 6000) }
 const stopAuto  = () => { clearInterval(timer) }
 
 onMounted(startAuto)

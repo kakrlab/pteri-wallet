@@ -164,3 +164,7 @@ export default {
 <style>
 
 </style>
+
+<script setup>
+useNoindex()
+</script>

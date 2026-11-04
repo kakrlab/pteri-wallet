@@ -151,3 +151,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 </style>
+
+<script setup>
+useNoindex()
+</script>

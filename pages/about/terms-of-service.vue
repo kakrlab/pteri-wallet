@@ -148,4 +148,11 @@ export default {};
 
 <script setup>
 definePageMeta({ layout: 'wallet' })
+
+useSeoMeta({
+  ogUrl: 'https://pteri.kakr.org/about/terms-of-service',
+  ogImage: 'https://pteri.kakr.org/pteri-wallet-og.png',
+  twitterImage: 'https://pteri.kakr.org/pteri-wallet-og.png',
+})
+useHead({ link: [{ rel: 'canonical', href: 'https://pteri.kakr.org/about/terms-of-service' }] })
 </script>

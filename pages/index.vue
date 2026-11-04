@@ -190,6 +190,20 @@ usePwSeo(
   '/',
 )
 
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        { '@type': 'Organization', '@id': 'https://pteri.kakr.org/#org', name: 'KAKR Labs', url: 'https://pteri.kakr.org/', logo: 'https://pteri.kakr.org/wallet/pteri-logo.png' },
+        { '@type': 'WebSite', '@id': 'https://pteri.kakr.org/#website', url: 'https://pteri.kakr.org/', name: 'PTERI Wallet', inLanguage: 'en', publisher: { '@id': 'https://pteri.kakr.org/#org' } },
+        { '@type': 'SoftwareApplication', name: 'PTERI Wallet', applicationCategory: 'FinanceApplication', operatingSystem: 'iOS, Android, Web', url: 'https://pteri.kakr.org/', image: 'https://pteri.kakr.org/pteri-wallet-og.png', publisher: { '@id': 'https://pteri.kakr.org/#org' } },
+      ],
+    }),
+  }],
+})
+
 const themeIndex = ref(0)
 const theme = computed(() => walletThemes[themeIndex.value])
 </script>

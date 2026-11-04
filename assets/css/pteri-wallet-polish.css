@@ -115,3 +115,26 @@ html:has(.pw),html:has(.pw) body{overflow-x:clip}
   .pw .mainnav{gap:16px}
 }
 @media (min-width:801px) and (max-width:1150px){.pw h1{font-size:56px}.pw .page-intro h1{font-size:48px}}
+
+/* Download cards: one aligned action row per card, no white badge plates. */
+.pw .device{gap:16px}
+.pw .device .store-badge,.pw .device .web-download{margin-top:auto;min-height:112px;height:112px;padding:0;background:transparent;border-radius:0;align-items:center;justify-content:flex-start}
+.pw .device .web-download .button{margin:0}
+.pw .store-badge .apple-badge{height:48px;width:auto}
+/* The unmodified Google sample has ~19px built-in white margin; offset it so the black badge lines up with the text edge. */
+.pw .store-badge .google-badge{height:112px;width:auto;margin-left:-6px}
+.pw .device .micro,.pw .device>.subtle-link{min-height:44px;display:flex;align-items:flex-start;line-height:1.5}
+@media (max-width:1050px) and (min-width:801px){.pw .device .store-badge,.pw .device .web-download{height:auto;margin-top:0}}
+@media (max-width:800px){.pw .device .store-badge,.pw .device .web-download{margin-top:4px;height:auto;min-height:0}.pw .store-badge .google-badge{height:100px;margin-left:-5px}.pw .device .micro,.pw .device>.subtle-link{min-height:0}}
+
+/* Second bump: body copy 17px, small text 15px */
+.pw{font-size:17px}
+.pw .lede{font-size:20px}
+.pw .page-intro .lede{font-size:19px}
+.pw .path p,.pw .setup-panel p,.pw .help-block p,.pw .device p,.pw details p,.pw .section-head p,.pw .split p,.pw .banner p,.pw .security-pillars p,.pw .step p,.pw .checklist li,.pw .flow-row,.pw .compact-list li,.pw .security-bridge p{font-size:17px}
+.pw .micro,.pw .quote-note,.pw .subtle-link,.pw .checklist li small,.pw .flow-row small,.pw .compact-list li span,.pw .live-note,.pw .result-count,.pw .theme-label,.pw .theme-controls .micro,.pw .screenshot-grid figcaption p,.pw .app-caption,.pw .theme-preview figcaption,.pw .num,.pw .pill,.pw .device .label,.pw .security-pillars span,.pw .breadcrumb,.pw .trademark-credit,.pw .footer-bottom{font-size:15px!important}
+.pw .theme-choice,.pw .choice-tabs button,.pw .mainnav a,.pw .platform,.pw .guide-nav a,.pw .button.small,.pw .footer p,.pw .footer a:not(.brand){font-size:15px}
+.pw .button{font-size:16px}
+.pw .footer strong,.pw summary,.pw .searchbox{font-size:17px}
+.pw h3{font-size:23px}
+@media (max-width:800px){.pw .lede{font-size:17px}.pw .path p,.pw .setup-panel p,.pw .help-block p,.pw .device p,.pw details p,.pw .section-head p,.pw .split p,.pw .banner p,.pw .security-pillars p,.pw .step p{font-size:16px}}

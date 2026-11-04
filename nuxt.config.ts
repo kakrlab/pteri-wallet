@@ -9,7 +9,8 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: 'https://www.pteri.org/pterifavicon.png' },
+        { rel: 'icon', type: 'image/png', href: '/wallet/pteri-logo.png' },
+        { rel: 'apple-touch-icon', href: '/wallet/pteri-logo.png' },
       ],
       script: [
         {
@@ -26,21 +27,29 @@ gtag('config', 'G-BMJ6F1C4GG');`,
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
-        // Default OG tags (can be overridden per page)
+        // Defaults (overridden per page by usePwSeo)
+        { name: 'description', content: 'Choose your PTERI Wallet experience, plan a compatible restore, and explore wallet and supported signing guidance.' },
+        { name: 'robots', content: 'index, follow, max-image-preview:large' },
+        { name: 'theme-color', content: '#5b3fd6' },
+        { name: 'application-name', content: 'PTERI Wallet' },
         { property: 'og:site_name', content: 'PTERI Wallet' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'en_US' },
         { property: 'og:title', content: 'PTERI Wallet — Litecoin and supported signing experiences' },
         { property: 'og:description', content: 'Choose your PTERI Wallet experience, plan a compatible restore, and explore wallet and supported signing guidance.' },
         { property: 'og:url', content: 'https://pteri.kakr.org' },
-        { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
-        { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
-        { property: 'og:image:type', content: 'image/jpeg' },
+        { property: 'og:image', content: 'https://pteri.kakr.org/pteri-wallet-og.png' },
+        { property: 'og:image:secure_url', content: 'https://pteri.kakr.org/pteri-wallet-og.png' },
+        { property: 'og:image:type', content: 'image/png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'PTERI Wallet - Secure Self-Custody Litecoin Wallet' },
+        { property: 'og:image:alt', content: 'PTERI Wallet: a security wallet for the AI era, shown with the wallet dashboard and message-signing screens' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@pteriwallet' },
-        { name: 'twitter:image', content: 'https://pteri.kakr.org/pteri-wallet-og.jpg' },
+        { name: 'twitter:title', content: 'PTERI Wallet — Litecoin and supported signing experiences' },
+        { name: 'twitter:description', content: 'Choose your PTERI Wallet experience, plan a compatible restore, and explore wallet and supported signing guidance.' },
+        { name: 'twitter:image', content: 'https://pteri.kakr.org/pteri-wallet-og.png' },
+        { name: 'twitter:image:alt', content: 'PTERI Wallet: a security wallet for the AI era' },
       ]
     }
   },

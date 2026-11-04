@@ -67,63 +67,145 @@
 
               <!-- Node.js -->
               <template v-if="activeTab === 'Node.js'">
-                <p class="text-gray-500">// Import PTERI client</p>
-                <p><span class="text-blue-400">import</span> <span class="text-white">&#123; PteriClient &#125;</span> <span class="text-blue-400">from</span> <span class="text-green-400">'@pteri-sdk'</span></p>
+                <p class="text-gray-500">// npm install liaas-js</p>
+                <p><span class="text-blue-400">var</span> <span class="text-white">LiaaS</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">require</span><span class="text-white">(</span><span class="text-green-400">'liaas-js'</span><span class="text-white">)</span></p>
                 <br>
-                <p class="text-gray-500">// Create authentication challenge</p>
-                <p><span class="text-blue-400">const</span> <span class="text-white">pteri</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">PteriClient</span><span class="text-white">(</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">)</span></p>
-                <p><span class="text-blue-400">const</span> <span class="text-white">challenge</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">createChallenge</span><span class="text-white">(&#123;</span></p>
-                <p class="pl-4"><span class="text-cyan-300">userId</span><span class="text-white">:</span> <span class="text-green-400">'user_123'</span><span class="text-white">,</span></p>
-                <p class="pl-4"><span class="text-cyan-300">appId</span><span class="text-white">:</span> <span class="text-green-400">'app_abc'</span><span class="text-white">,</span></p>
+                <p class="text-gray-500">// Initialize with your node URL or API key</p>
+                <p><span class="text-blue-400">var</span> <span class="text-white">api</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">LiaaS</span><span class="text-gray-400">.</span><span class="text-yellow-300">AddressApi</span><span class="text-white">()</span></p>
+                <br>
+                <p class="text-gray-500">// Get address balance</p>
+                <p><span class="text-white">api</span><span class="text-gray-400">.</span><span class="text-yellow-300">apiAddressAddressBalanceGet</span><span class="text-white">(&#123;</span></p>
+                <p class="pl-4"><span class="text-cyan-300">nodeUrlOrApiAccessKey</span><span class="text-white">:</span> <span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">address</span><span class="text-white">:</span> <span class="text-green-400">'ltc1...address'</span></p>
+                <p><span class="text-white">&#125;, (err, data) =&gt; &#123;</span></p>
+                <p class="pl-4"><span class="text-white">console</span><span class="text-gray-400">.</span><span class="text-yellow-300">log</span><span class="text-white">(data</span><span class="text-gray-400">.</span><span class="text-white">confirmed, data</span><span class="text-gray-400">.</span><span class="text-white">unconfirmed)</span></p>
                 <p><span class="text-white">&#125;)</span></p>
                 <br>
-                <p class="text-gray-500">// User signs the challenge in PTERI Wallet</p>
-                <p><span class="text-blue-400">const</span> <span class="text-white">signature</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">getSignature</span><span class="text-white">(challenge)</span></p>
-                <br>
-                <p class="text-gray-500">// Verify signature</p>
-                <p><span class="text-blue-400">const</span> <span class="text-white">result</span> <span class="text-blue-400">=</span> <span class="text-blue-400">await</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">verify</span><span class="text-white">(&#123;</span></p>
-                <p class="pl-4"><span class="text-cyan-300">challengeId</span><span class="text-white">:</span> <span class="text-white">challenge</span><span class="text-gray-400">.</span><span class="text-white">id,</span></p>
-                <p class="pl-4"><span class="text-cyan-300">signature</span><span class="text-white">:</span> <span class="text-white">signature</span></p>
-                <p><span class="text-white">&#125;)</span></p>
+                <p class="text-gray-500">// Sign a message</p>
+                <p><span class="text-blue-400">var</span> <span class="text-white">addrApi</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">LiaaS</span><span class="text-gray-400">.</span><span class="text-yellow-300">AddressApi</span><span class="text-white">()</span></p>
+                <p><span class="text-white">addrApi</span><span class="text-gray-400">.</span><span class="text-yellow-300">apiAddressSignMessagePost</span><span class="text-white">(&#123;</span></p>
+                <p class="pl-4"><span class="text-cyan-300">nodeUrlOrApiAccessKey</span><span class="text-white">:</span> <span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">address</span><span class="text-white">:</span> <span class="text-green-400">'ltc1...address'</span><span class="text-white">,</span></p>
+                <p class="pl-4"><span class="text-cyan-300">message</span><span class="text-white">:</span> <span class="text-green-400">'Hello LiaaS'</span></p>
+                <p><span class="text-white">&#125;, (err, data) =&gt; console</span><span class="text-gray-400">.</span><span class="text-yellow-300">log</span><span class="text-white">(data))</span></p>
               </template>
 
               <!-- Python -->
               <template v-else-if="activeTab === 'Python'">
-                <p class="text-gray-500"># Import PTERI client</p>
-                <p><span class="text-blue-400">from</span> <span class="text-white">pteri_sdk</span> <span class="text-blue-400">import</span> <span class="text-yellow-300">PteriClient</span></p>
+                <p class="text-gray-500"># pip install liaas</p>
+                <p><span class="text-blue-400">import</span> <span class="text-white">openapi_client</span></p>
+                <p><span class="text-blue-400">from</span> <span class="text-white">openapi_client</span><span class="text-gray-400">.</span><span class="text-white">rest</span> <span class="text-blue-400">import</span> <span class="text-yellow-300">ApiException</span></p>
                 <br>
-                <p class="text-gray-500"># Create authentication challenge</p>
-                <p><span class="text-white">pteri</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">PteriClient</span><span class="text-white">(</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">)</span></p>
-                <p><span class="text-white">challenge</span> <span class="text-blue-400">=</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">create_challenge</span><span class="text-white">(</span></p>
-                <p class="pl-4"><span class="text-cyan-300">user_id</span><span class="text-white">=</span><span class="text-green-400">'user_123'</span><span class="text-white">,</span></p>
-                <p class="pl-4"><span class="text-cyan-300">app_id</span><span class="text-white">=</span><span class="text-green-400">'app_abc'</span></p>
+                <p class="text-gray-500"># Configure with your node URL or API key</p>
+                <p><span class="text-white">configuration</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">openapi_client</span><span class="text-gray-400">.</span><span class="text-yellow-300">Configuration</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-cyan-300">host</span><span class="text-white">=</span><span class="text-green-400">"https://liaasnode.com"</span></p>
                 <p><span class="text-white">)</span></p>
                 <br>
-                <p class="text-gray-500"># User signs the challenge in PTERI Wallet</p>
-                <p><span class="text-white">signature</span> <span class="text-blue-400">=</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">get_signature</span><span class="text-white">(challenge)</span></p>
-                <br>
-                <p class="text-gray-500"># Verify signature</p>
-                <p><span class="text-white">result</span> <span class="text-blue-400">=</span> <span class="text-white">pteri</span><span class="text-gray-400">.</span><span class="text-yellow-300">verify</span><span class="text-white">(</span></p>
-                <p class="pl-4"><span class="text-cyan-300">challenge_id</span><span class="text-white">=</span><span class="text-white">challenge</span><span class="text-gray-400">.</span><span class="text-white">id,</span></p>
-                <p class="pl-4"><span class="text-cyan-300">signature</span><span class="text-white">=</span><span class="text-white">signature</span></p>
-                <p><span class="text-white">)</span></p>
+                <p><span class="text-blue-400">with</span> <span class="text-yellow-300">openapi_client</span><span class="text-gray-400">.</span><span class="text-yellow-300">ApiClient</span><span class="text-white">(configuration)</span> <span class="text-blue-400">as</span> <span class="text-white">api_client:</span></p>
+                <p class="pl-4"><span class="text-white">api</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">openapi_client</span><span class="text-gray-400">.</span><span class="text-yellow-300">AddressApi</span><span class="text-white">(api_client)</span></p>
+                <p class="pl-4"><span class="text-gray-500"># Get address balance</span></p>
+                <p class="pl-4"><span class="text-white">api</span><span class="text-gray-400">.</span><span class="text-yellow-300">api_address_address_balance_get</span><span class="text-white">(</span></p>
+                <p class="pl-8"><span class="text-cyan-300">node_url_or_api_access_key</span><span class="text-white">=</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">,</span></p>
+                <p class="pl-8"><span class="text-cyan-300">address</span><span class="text-white">=</span><span class="text-green-400">'ltc1...address'</span></p>
+                <p class="pl-4"><span class="text-white">)</span></p>
+                <p class="pl-4"><span class="text-gray-500"># Sign a message</span></p>
+                <p class="pl-4"><span class="text-white">api</span><span class="text-gray-400">.</span><span class="text-yellow-300">api_address_sign_message_post</span><span class="text-white">(</span></p>
+                <p class="pl-8"><span class="text-cyan-300">node_url_or_api_access_key</span><span class="text-white">=</span><span class="text-green-400">'YOUR_API_KEY'</span><span class="text-white">,</span></p>
+                <p class="pl-8"><span class="text-cyan-300">message</span><span class="text-white">=</span><span class="text-green-400">'Hello LiaaS'</span></p>
+                <p class="pl-4"><span class="text-white">)</span></p>
               </template>
 
               <!-- cURL -->
               <template v-else-if="activeTab === 'cURL'">
-                <p class="text-gray-500"># Create authentication challenge</p>
-                <p><span class="text-yellow-300">curl</span> <span class="text-white">-X POST</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-green-400">'https://api.kakrlabs.com/v1/challenge'</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Authorization: Bearer YOUR_API_KEY'</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Content-Type: application/json'</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-white">-d</span> <span class="text-green-400">'&#123;"userId":"user_123","appId":"app_abc"&#125;'</span></p>
+                <p class="text-gray-500"># Get address balance</p>
+                <p><span class="text-yellow-300">curl</span> <span class="text-white">-X GET</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-green-400">'https://liaasnode.com/api/Address/address-balance'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'nodeUrlOrApiAccessKey: YOUR_API_KEY'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-white">-G</span> <span class="text-white">--data-urlencode</span> <span class="text-green-400">'address=ltc1...address'</span></p>
                 <br>
-                <p class="text-gray-500"># Verify signature</p>
+                <p class="text-gray-500"># Sign a message with address private key</p>
                 <p><span class="text-yellow-300">curl</span> <span class="text-white">-X POST</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-green-400">'https://api.kakrlabs.com/v1/verify'</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Authorization: Bearer YOUR_API_KEY'</span> <span class="text-green-400">\</span></p>
+                <p class="pl-4"><span class="text-green-400">'https://liaasnode.com/api/Address/sign-message'</span> <span class="text-green-400">\</span></p>
                 <p class="pl-4"><span class="text-white">-H</span> <span class="text-green-400">'Content-Type: application/json'</span> <span class="text-green-400">\</span></p>
-                <p class="pl-4"><span class="text-white">-d</span> <span class="text-green-400">'&#123;"challengeId":"&lt;id&gt;","signature":"&lt;sig&gt;"&#125;'</span></p>
+                <p class="pl-4"><span class="text-white">-d</span> <span class="text-green-400">'&#123;</span></p>
+                <p class="pl-6"><span class="text-green-400">"nodeUrlOrApiAccessKey": "YOUR_API_KEY",</span></p>
+                <p class="pl-6"><span class="text-green-400">"address": "ltc1...address",</span></p>
+                <p class="pl-6"><span class="text-green-400">"message": "Hello LiaaS"</span></p>
+                <p class="pl-4"><span class="text-green-400">&#125;'</span></p>
+              </template>
+
+              <!-- Go -->
+              <template v-else-if="activeTab === 'Go'">
+                <p class="text-gray-500">// go get github.com/kakrlabs/liaas-go</p>
+                <p><span class="text-blue-400">import</span> <span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-green-400">"context"</span></p>
+                <p class="pl-4"><span class="text-green-400">liaas "github.com/kakrlabs/liaas-go"</span></p>
+                <p><span class="text-white">)</span></p>
+                <br>
+                <p class="text-gray-500">// Configure client</p>
+                <p><span class="text-white">cfg</span> <span class="text-blue-400">:=</span> <span class="text-yellow-300">liaas</span><span class="text-gray-400">.</span><span class="text-yellow-300">NewConfiguration</span><span class="text-white">()</span></p>
+                <p><span class="text-white">cfg</span><span class="text-gray-400">.</span><span class="text-white">Host</span> <span class="text-blue-400">=</span> <span class="text-green-400">"liaasnode.com"</span></p>
+                <p><span class="text-white">client</span> <span class="text-blue-400">:=</span> <span class="text-yellow-300">liaas</span><span class="text-gray-400">.</span><span class="text-yellow-300">NewAPIClient</span><span class="text-white">(cfg)</span></p>
+                <br>
+                <p class="text-gray-500">// Get address balance</p>
+                <p><span class="text-white">resp, _, err</span> <span class="text-blue-400">:=</span> <span class="text-white">client</span><span class="text-gray-400">.</span><span class="text-yellow-300">AddressApi</span><span class="text-gray-400">.</span></p>
+                <p class="pl-4"><span class="text-yellow-300">ApiAddressAddressBalanceGet</span><span class="text-white">(</span><span class="text-yellow-300">context</span><span class="text-gray-400">.</span><span class="text-yellow-300">Background</span><span class="text-white">())</span><span class="text-gray-400">.</span></p>
+                <p class="pl-4"><span class="text-yellow-300">NodeUrlOrApiAccessKey</span><span class="text-white">(</span><span class="text-green-400">"YOUR_API_KEY"</span><span class="text-white">)</span><span class="text-gray-400">.</span></p>
+                <p class="pl-4"><span class="text-yellow-300">Address</span><span class="text-white">(</span><span class="text-green-400">"ltc1...address"</span><span class="text-white">)</span><span class="text-gray-400">.</span></p>
+                <p class="pl-4"><span class="text-yellow-300">Execute</span><span class="text-white">()</span></p>
+                <br>
+                <p><span class="text-blue-400">if</span> <span class="text-white">err != nil &#123; log</span><span class="text-gray-400">.</span><span class="text-yellow-300">Fatal</span><span class="text-white">(err) &#125;</span></p>
+                <p><span class="text-white">fmt</span><span class="text-gray-400">.</span><span class="text-yellow-300">Println</span><span class="text-white">(resp</span><span class="text-gray-400">.</span><span class="text-white">Data</span><span class="text-gray-400">.</span><span class="text-white">Confirmed)</span></p>
+              </template>
+
+              <!-- Rust -->
+              <template v-else-if="activeTab === 'Rust'">
+                <p class="text-gray-500">// cargo add liaas</p>
+                <p><span class="text-blue-400">use</span> <span class="text-white">liaas_sdk</span><span class="text-gray-400">::</span><span class="text-white">&#123;</span><span class="text-yellow-300">Configuration</span><span class="text-white">,</span> <span class="text-yellow-300">AddressApi</span><span class="text-white">&#125;;</span></p>
+                <br>
+                <p class="text-gray-500">// Configure client</p>
+                <p><span class="text-blue-400">let</span> <span class="text-blue-400">mut</span> <span class="text-white">cfg</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">Configuration</span><span class="text-gray-400">::</span><span class="text-yellow-300">new</span><span class="text-white">();</span></p>
+                <p><span class="text-white">cfg</span><span class="text-gray-400">.</span><span class="text-white">base_path</span> <span class="text-blue-400">=</span> <span class="text-green-400">"https://liaasnode.com"</span><span class="text-gray-400">.</span><span class="text-yellow-300">to_string</span><span class="text-white">();</span></p>
+                <br>
+                <p class="text-gray-500">// Get address balance</p>
+                <p><span class="text-blue-400">let</span> <span class="text-white">result</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">AddressApi</span><span class="text-gray-400">::</span><span class="text-yellow-300">api_address_address_balance_get</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-white">&amp;cfg,</span></p>
+                <p class="pl-4"><span class="text-yellow-300">Some</span><span class="text-white">(</span><span class="text-green-400">"YOUR_API_KEY"</span><span class="text-white">),</span></p>
+                <p class="pl-4"><span class="text-yellow-300">Some</span><span class="text-white">(</span><span class="text-green-400">"ltc1...address"</span><span class="text-white">),</span></p>
+                <p><span class="text-white">)</span><span class="text-gray-400">.</span><span class="text-yellow-300">await</span><span class="text-white">?;</span></p>
+                <br>
+                <p class="text-gray-500">// Sign a message</p>
+                <p><span class="text-blue-400">let</span> <span class="text-white">sig</span> <span class="text-blue-400">=</span> <span class="text-yellow-300">AddressApi</span><span class="text-gray-400">::</span><span class="text-yellow-300">api_address_sign_message_post</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-white">&amp;cfg, sign_dto</span></p>
+                <p><span class="text-white">)</span><span class="text-gray-400">.</span><span class="text-yellow-300">await</span><span class="text-white">?;</span></p>
+                <p><span class="text-white">println</span><span class="text-yellow-300">!</span><span class="text-white">(</span><span class="text-green-400">"Signature: &#123;&#125;"</span><span class="text-white">, sig</span><span class="text-gray-400">.</span><span class="text-white">data);</span></p>
+              </template>
+
+              <!-- Java -->
+              <template v-else-if="activeTab === 'Java'">
+                <p class="text-gray-500">// gradle add liaas</p>
+                <p><span class="text-blue-400">import</span> <span class="text-white">org.openapitools.client.ApiClient;</span></p>
+                <p><span class="text-blue-400">import</span> <span class="text-white">org.openapitools.client.api.AddressApi;</span></p>
+                <p><span class="text-blue-400">import</span> <span class="text-white">org.openapitools.client.api.WalletApi;</span></p>
+                <br>
+                <p class="text-gray-500">// Configure client</p>
+                <p><span class="text-yellow-300">ApiClient</span> <span class="text-white">client</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">ApiClient</span><span class="text-white">();</span></p>
+                <p><span class="text-white">client</span><span class="text-gray-400">.</span><span class="text-yellow-300">setBasePath</span><span class="text-white">(</span><span class="text-green-400">"https://liaasnode.com"</span><span class="text-white">);</span></p>
+                <br>
+                <p class="text-gray-500">// Get address balance</p>
+                <p><span class="text-yellow-300">AddressApi</span> <span class="text-white">api</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">AddressApi</span><span class="text-white">(client);</span></p>
+                <p><span class="text-white">api</span><span class="text-gray-400">.</span><span class="text-yellow-300">apiAddressAddressBalanceGet</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-green-400">"YOUR_API_KEY"</span><span class="text-white">,</span></p>
+                <p class="pl-4"><span class="text-green-400">"ltc1...address"</span></p>
+                <p><span class="text-white">);</span></p>
+                <br>
+                <p class="text-gray-500">// Sign a message using wallet</p>
+                <p><span class="text-yellow-300">WalletApi</span> <span class="text-white">walletApi</span> <span class="text-blue-400">=</span> <span class="text-blue-400">new</span> <span class="text-yellow-300">WalletApi</span><span class="text-white">(client);</span></p>
+                <p><span class="text-white">walletApi</span><span class="text-gray-400">.</span><span class="text-yellow-300">apiWalletSignWalletMessagePost</span><span class="text-white">(</span></p>
+                <p class="pl-4"><span class="text-blue-400">new</span> <span class="text-yellow-300">SignMessageUsingWalletdto</span><span class="text-white">()</span></p>
+                <p class="pl-6"><span class="text-gray-400">.</span><span class="text-yellow-300">nodeUrlOrApiAccessKey</span><span class="text-white">(</span><span class="text-green-400">"YOUR_API_KEY"</span><span class="text-white">)</span></p>
+                <p class="pl-6"><span class="text-gray-400">.</span><span class="text-yellow-300">message</span><span class="text-white">(</span><span class="text-green-400">"Hello LiaaS"</span><span class="text-white">)</span></p>
+                <p><span class="text-white">);</span></p>
               </template>
 
             </div>
@@ -151,7 +233,7 @@
 </template>
 
 <script setup>
-const tabs = ['Node.js', 'Python', 'cURL']
+const tabs = ['Node.js', 'Python', 'cURL', 'Go', 'Rust', 'Java']
 const activeTab = ref('Node.js')
 
 const devFeatures = [

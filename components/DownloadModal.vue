@@ -10,10 +10,7 @@
         <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" @click="close" />
 
         <!-- Modal panel -->
-        <div class="relative z-10 w-full max-w-lg bg-card-dark border border-white/10 rounded-3xl shadow-2xl shadow-blue-900/40 overflow-hidden">
-
-          <!-- Top glow accent -->
-          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 rounded-full" />
+        <div class="relative z-10 w-full max-w-sm bg-card-dark border border-white/10 rounded-2xl shadow-2xl shadow-blue-900/40 overflow-hidden">
 
           <!-- Close button -->
           <button
@@ -27,20 +24,13 @@
           </button>
 
           <!-- Header -->
-          <div class="px-8 pt-8 pb-6 text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 mb-4">
-              <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-              </svg>
-            </div>
-            <h2 class="text-2xl font-bold text-white mb-2">Download PTERI Wallet</h2>
-            <p class="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto">
-              Self-custody Litecoin wallet with MFA, biometric security, and MWEB privacy. Available on iOS and Android.
-            </p>
+          <div class="px-6 pt-8 pb-5 text-center">
+            <h2 class="text-xl font-bold text-white mb-1">Download PTERI Wallet</h2>
+            <p class="text-gray-400 text-sm">Available on iOS, Android, and Web.</p>
           </div>
 
           <!-- Download options -->
-          <div class="px-8 pb-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="px-6 pb-6 flex flex-col gap-3">
 
             <!-- App Store -->
             <a
@@ -48,20 +38,18 @@
               target="_blank"
               rel="noopener"
               @click="close"
-              class="group flex flex-col items-center gap-4 p-6 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-blue-500/40 rounded-2xl transition-all duration-200"
+              class="flex items-center gap-4 px-4 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 rounded-xl transition-all duration-200 group"
             >
-              <img src="https://kakr.ai/ios.png" alt="Download on the App Store" class="h-12 object-contain transition-transform duration-200 group-hover:scale-105" />
-              <div class="text-center">
-                <p class="text-gray-400 text-xs mb-0.5">Download on the</p>
-                <p class="text-white font-bold text-base">App Store</p>
-                <p class="text-gray-500 text-xs mt-1">iOS 14.0 or later</p>
+              <svg class="w-6 h-6 text-white flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              <div class="flex-1">
+                <p class="text-white font-semibold text-sm">App Store</p>
+                <p class="text-gray-500 text-xs">iPhone & iPad</p>
               </div>
-              <div class="flex items-center gap-1 text-blue-400 text-xs font-medium group-hover:gap-2 transition-all">
-                Open App Store
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
-              </div>
+              <svg class="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
 
             <!-- Google Play -->
@@ -70,77 +58,39 @@
               target="_blank"
               rel="noopener"
               @click="close"
-              class="group flex flex-col items-center gap-4 p-6 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-green-500/40 rounded-2xl transition-all duration-200"
+              class="flex items-center gap-4 px-4 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 rounded-xl transition-all duration-200 group"
             >
-              <img src="https://kakr.ai/playstore.png" alt="Get it on Google Play" class="h-12 object-contain transition-transform duration-200 group-hover:scale-105" />
-              <div class="text-center">
-                <p class="text-gray-400 text-xs mb-0.5">Get it on</p>
-                <p class="text-white font-bold text-base">Google Play</p>
-                <p class="text-gray-500 text-xs mt-1">Android 7.0 or later</p>
+              <img src="/icons8-playstore-96.png" alt="Google Play" class="w-6 h-6 object-contain flex-shrink-0" />
+              <div class="flex-1">
+                <p class="text-white font-semibold text-sm">Google Play</p>
+                <p class="text-gray-500 text-xs">Android devices</p>
               </div>
-              <div class="flex items-center gap-1 text-green-400 text-xs font-medium group-hover:gap-2 transition-all">
-                Open Play Store
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
-              </div>
+              <svg class="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-          </div>
 
-          <!-- Web wallet row -->
-          <div class="px-8 pb-8">
+            <!-- Web Wallet -->
             <a
               href="https://wallet.pteri.org"
               target="_blank"
               rel="noopener"
               @click="close"
-              class="group flex items-center justify-between w-full px-5 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-purple-500/40 rounded-xl transition-all duration-200"
+              class="flex items-center gap-4 px-4 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 rounded-xl transition-all duration-200 group"
             >
-              <div class="flex items-center gap-3">
-                <div class="w-9 h-9 bg-purple-500/10 border border-purple-500/20 rounded-lg flex items-center justify-center">
-                  <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
-                  </svg>
-                </div>
-                <div>
-                  <p class="text-white font-semibold text-sm">Web Wallet</p>
-                  <p class="text-gray-500 text-xs">Use directly in your browser — no install needed</p>
-                </div>
+              <svg class="w-6 h-6 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
+              </svg>
+              <div class="flex-1">
+                <p class="text-white font-semibold text-sm">Web Wallet</p>
+                <p class="text-gray-500 text-xs">No install needed</p>
               </div>
-              <svg class="w-4 h-4 text-gray-500 group-hover:text-purple-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              <svg class="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
               </svg>
             </a>
-          </div>
 
-          <!-- Requirements footer -->
-          <div class="border-t border-white/10 px-8 py-4 flex flex-wrap gap-x-6 gap-y-2 justify-center">
-            <span class="flex items-center gap-1.5 text-gray-500 text-xs">
-              <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              Self-Custody
-            </span>
-            <span class="flex items-center gap-1.5 text-gray-500 text-xs">
-              <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              No Data Collection
-            </span>
-            <span class="flex items-center gap-1.5 text-gray-500 text-xs">
-              <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              Biometric Security
-            </span>
-            <span class="flex items-center gap-1.5 text-gray-500 text-xs">
-              <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              Free to Download
-            </span>
           </div>
-
         </div>
       </div>
     </Transition>

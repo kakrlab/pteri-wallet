@@ -127,3 +127,7 @@ ul.list-disc li {
     margin-bottom: 0.5rem;
 }
 </style>
+
+<script setup>
+useNoindex()
+</script>

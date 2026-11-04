@@ -62,5 +62,6 @@
 </template>
 
 <script setup>
+useNoindex()
 // Web wallet is now live at wallet.pteri.org
 </script>

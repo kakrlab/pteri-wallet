@@ -11,21 +11,21 @@
 
           <!-- Desktop Navigation -->
           <ul class="hidden xl:flex items-center space-x-8">
-            <li class="relative">
+            <li class="relative group">
               <button
-                class="text-sm text-gray-300 hover:text-white font-medium flex items-center gap-1"
-                @click="toggleProductMenu"
+                class="text-sm text-gray-300 hover:text-white font-medium flex items-center gap-1 py-2"
               >
                 Product
-                <svg class="w-3 h-3 mt-0.5 transition-transform duration-200" :class="productMenuOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-3 h-3 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div v-if="productMenuOpen" class="absolute top-full mt-2 w-48 bg-card-dark border border-white/10 rounded-lg shadow-xl py-2 z-50">
-                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('what-is-pteri'); productMenuOpen = false">What is PTERI</button>
-                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('why-pteri'); productMenuOpen = false">Why PTERI</button>
-                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('security'); productMenuOpen = false">Security</button>
-                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('download'); productMenuOpen = false">Download</button>
+              <div class="absolute left-0 top-full w-48 bg-card-dark border border-white/10 rounded-lg shadow-xl py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 z-50" style="margin-top: -4px;">
+                <div class="absolute -top-2 left-0 right-0 h-2"></div>
+                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('what-is-pteri')">What is PTERI</button>
+                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('why-pteri')">Why PTERI</button>
+                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('security')">Security</button>
+                <button class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5" @click="scrollTo('download')">Download</button>
               </div>
             </li>
 
@@ -42,13 +42,15 @@
             </li>
 
             <li class="relative group">
-              <button class="text-sm text-gray-300 hover:text-white font-medium flex items-center gap-1">
+              <button class="text-sm text-gray-300 hover:text-white font-medium flex items-center gap-1 py-2">
                 Developers
                 <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="absolute left-0 top-full mt-2 w-64 bg-card-dark border border-white/10 rounded-xl shadow-2xl py-3 hidden group-hover:block z-50">
+              <div class="absolute left-0 top-full w-64 bg-card-dark border border-white/10 rounded-xl shadow-2xl py-3 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 z-50" style="padding-top: 8px; margin-top: -4px;">
+                <!-- invisible bridge to prevent gap -->
+                <div class="absolute -top-2 left-0 right-0 h-2"></div>
 
                 <!-- On-page -->
                 <div class="px-3 pb-2">
@@ -69,7 +71,7 @@
                     Documentation
                     <svg class="w-3 h-3 ml-auto text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                   </a>
-                  <a href="https://docs.kakrlabs.com/api-reference" target="_blank" class="flex items-center gap-2.5 px-2 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">
+                  <a href="https://docs.kakrlabs.com/6.-api-reference/6.2-api-reference-enterprise" target="_blank" class="flex items-center gap-2.5 px-2 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">
                     <svg class="w-4 h-4 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                     API Reference
                     <svg class="w-3 h-3 ml-auto text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -79,12 +81,7 @@
                     Playground
                     <svg class="w-3 h-3 ml-auto text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                   </a>
-                  <a href="https://dashboard.kakrlabs.com" target="_blank" class="flex items-center gap-2.5 px-2 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">
-                    <svg class="w-4 h-4 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                    API Dashboard
-                    <svg class="w-3 h-3 ml-auto text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                  </a>
-                  <a href="https://docs.kakrlabs.com/sdks" target="_blank" class="flex items-center gap-2.5 px-2 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">
+                  <a href="https://docs.kakrlabs.com/7.-sdks-and-integration-guides/litecoin-liaas-api-api-clients#official-sdks" target="_blank" class="flex items-center gap-2.5 px-2 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">
                     <svg class="w-4 h-4 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
                     SDKs
                     <svg class="w-3 h-3 ml-auto text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -160,7 +157,7 @@
                 Documentation
                 <svg class="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
-              <a href="https://docs.kakrlabs.com/api-reference" target="_blank" class="mobile-nav-link text-sm flex items-center justify-between">
+              <a href="https://docs.kakrlabs.com/6.-api-reference/6.2-api-reference-enterprise" target="_blank" class="mobile-nav-link text-sm flex items-center justify-between">
                 API Reference
                 <svg class="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
@@ -168,11 +165,7 @@
                 Playground
                 <svg class="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
-              <a href="https://dashboard.kakrlabs.com" target="_blank" class="mobile-nav-link text-sm flex items-center justify-between">
-                API Dashboard
-                <svg class="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-              <a href="https://docs.kakrlabs.com/sdks" target="_blank" class="mobile-nav-link text-sm flex items-center justify-between">
+              <a href="https://docs.kakrlabs.com/7.-sdks-and-integration-guides/litecoin-liaas-api-api-clients#official-sdks" target="_blank" class="mobile-nav-link text-sm flex items-center justify-between">
                 SDKs
                 <svg class="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
@@ -207,20 +200,9 @@ const route = useRoute()
 
 const menuOpen = ref(false)
 const devMenuOpen = ref(false)
-const productMenuOpen = ref(false)
 
 const toggleMenu = () => { menuOpen.value = !menuOpen.value }
 const toggleDevMenu = () => { devMenuOpen.value = !devMenuOpen.value }
-const toggleProductMenu = () => { productMenuOpen.value = !productMenuOpen.value }
-
-// Close product menu when clicking outside
-onMounted(() => {
-  document.addEventListener('click', (e) => {
-    if (!(e.target as Element).closest('.relative')) {
-      productMenuOpen.value = false
-    }
-  })
-})
 
 const scrollTo = (id: string) => {
   // If not on homepage, navigate there first then scroll
