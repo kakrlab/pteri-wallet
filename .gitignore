@@ -24,3 +24,6 @@ logs
 .env.*
 !.env.example
 .vercel
+
+# Vercel local build output (committing it makes Vercel skip the build)
+.vercel
